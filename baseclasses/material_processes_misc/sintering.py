@@ -31,8 +31,14 @@ class Sintering(ArchiveSection):
         links = ['http://purl.obolibrary.org/obo/PATO_0000146','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002111'],
 =======
         #Link to class 'temperature'
+<<<<<<< HEAD
         link = ['http://purl.obolibrary.org/obo/PATO_0000146'],
 >>>>>>> 2bfcffa (First Commit, added links in files annealing, quenching, sintering, wet chemical depo, dip coating, spin coating, spray pyrolysis, slot die coating)
+=======
+        links = ['http://purl.obolibrary.org/obo/PATO_0000146'],
+        #Link to class 'temperature setting datum'
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002111'],
+>>>>>>> ff6f4e2 (Corrected files from previous commit)
         type=np.dtype(
             np.float64),
         unit=('°C'),
@@ -47,10 +53,14 @@ class Sintering(ArchiveSection):
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001063','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002072'],
 =======
         #Link to class 'process time'
-        link = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001063'],
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001063'],
         #Link to class 'process time setting datum'
+<<<<<<< HEAD
         link = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002072'],
 >>>>>>> 2bfcffa (First Commit, added links in files annealing, quenching, sintering, wet chemical depo, dip coating, spin coating, spray pyrolysis, slot die coating)
+=======
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002072'],
+>>>>>>> ff6f4e2 (Corrected files from previous commit)
         type=np.dtype(
             np.float64),
         unit=('s'),

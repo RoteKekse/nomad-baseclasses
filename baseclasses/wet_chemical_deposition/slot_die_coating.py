@@ -33,12 +33,16 @@ class SlotDieCoatingProperties(ArchiveSection):
 
     flow_rate = Quantity(
 <<<<<<< HEAD
+<<<<<<< HEAD
         #Link to ontology class 'flow rate', Link to ontology class 'flow rate setting datum'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005039', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005048'],
 =======
         #Der Link zur Quality
+=======
+        #Link to class 'flow rate'
+>>>>>>> ff6f4e2 (Corrected files from previous commit)
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005039'],
-        #Der Link zum Setting Datum
+        #Link to class 'flow rate setting datum'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005048'],
 >>>>>>> 2bfcffa (First Commit, added links in files annealing, quenching, sintering, wet chemical depo, dip coating, spin coating, spray pyrolysis, slot die coating)
         type=np.dtype(
@@ -50,12 +54,16 @@ class SlotDieCoatingProperties(ArchiveSection):
 
     slot_die_head_width = Quantity(
 <<<<<<< HEAD
+<<<<<<< HEAD
         #Link to ontology class 'slot die head width', Link to ontology class 'slot die head width setting datum'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005038', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005047'],
 =======
         #Der Link zur Quality
+=======
+        #Link to class 'slot die head width'
+>>>>>>> ff6f4e2 (Corrected files from previous commit)
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005038'],
-        #Der Link zum Setting Datum
+        #Link to class 'slot die head width setting datum'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005047'],
 >>>>>>> 2bfcffa (First Commit, added links in files annealing, quenching, sintering, wet chemical depo, dip coating, spin coating, spray pyrolysis, slot die coating)
         type=np.dtype(
@@ -69,12 +77,16 @@ class SlotDieCoatingProperties(ArchiveSection):
 
     slot_die_shim_width = Quantity(
 <<<<<<< HEAD
+<<<<<<< HEAD
         #Link to ontology class 'slot die shim width', Link to ontology class 'slot die chim width setting datum'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005035', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005045'],
 =======
         #Der Link zur Quality
+=======
+        #Link to class 'slot die shim width'
+>>>>>>> ff6f4e2 (Corrected files from previous commit)
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005035'],
-        #Der Link zum Setting Datum
+        #Link to class 'slot die chim width setting datum'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005045'],
 >>>>>>> 2bfcffa (First Commit, added links in files annealing, quenching, sintering, wet chemical depo, dip coating, spin coating, spray pyrolysis, slot die coating)
         type=np.dtype(
@@ -88,12 +100,16 @@ class SlotDieCoatingProperties(ArchiveSection):
 
     slot_die_shim_thickness = Quantity(
 <<<<<<< HEAD
+<<<<<<< HEAD
         #Link to ontology class 'slot die shim thickness', Link to ontology class 'slot die shim thickness setting datum'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005036', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005046'],
 =======
         #Der Link zur Quality
+=======
+        #Link to class 'slot die shim thickness''
+>>>>>>> ff6f4e2 (Corrected files from previous commit)
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005036'],
-        #Der Link zum Setting Datum
+        #Link to class 'slot die shim thickness setting datum'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005046'],
 >>>>>>> 2bfcffa (First Commit, added links in files annealing, quenching, sintering, wet chemical depo, dip coating, spin coating, spray pyrolysis, slot die coating)
         type=np.dtype(
@@ -107,12 +123,16 @@ class SlotDieCoatingProperties(ArchiveSection):
 
     slot_die_head_distance_to_thinfilm = Quantity(
 <<<<<<< HEAD
+<<<<<<< HEAD
         #Link to ontology class 'slot die head distance to thinfilm', Link to ontology class 'slot die head distane to thinfilm setting datum'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005034', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005044'],
 =======
         #Der Link zur Quality
+=======
+        #Link to class 'slot die head distance to thinfilm'
+>>>>>>> ff6f4e2 (Corrected files from previous commit)
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005034'],
-        #Der Link zum Setting Datum
+        #Link to class 'slot die head distane to thinfilm setting datum'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005044'],
 >>>>>>> 2bfcffa (First Commit, added links in files annealing, quenching, sintering, wet chemical depo, dip coating, spin coating, spray pyrolysis, slot die coating)
         type=np.dtype(
@@ -126,12 +146,16 @@ class SlotDieCoatingProperties(ArchiveSection):
     
     slot_die_head_speed = Quantity(
 <<<<<<< HEAD
+<<<<<<< HEAD
         #Link to ontology class 'slot die head speed', Link to ontology class 'slot die head speed setting datum'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005033', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005033'],
 =======
         #Der Link zur Quality
+=======
+        #Link to class 'slot die head speed'
+>>>>>>> ff6f4e2 (Corrected files from previous commit)
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005033'],
-        #Der Link zum Setting Datum
+        #Link to class 'slot die head speed setting datum'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005033'],
 >>>>>>> 2bfcffa (First Commit, added links in files annealing, quenching, sintering, wet chemical depo, dip coating, spin coating, spray pyrolysis, slot die coating)
         type=np.dtype(
@@ -145,6 +169,7 @@ class SlotDieCoatingProperties(ArchiveSection):
 
     temperature = Quantity(
 <<<<<<< HEAD
+<<<<<<< HEAD
         #Link to ontology class 'temperature', Link to ontology class 'temperature setting datum'
         links = ['http://purl.obolibrary.org/obo/PATO_0000146', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002111'],
 =======
@@ -153,6 +178,12 @@ class SlotDieCoatingProperties(ArchiveSection):
         #Der Link zum Setting Datum
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#print_head_temperature_setting_datum'],
 >>>>>>> 2bfcffa (First Commit, added links in files annealing, quenching, sintering, wet chemical depo, dip coating, spin coating, spray pyrolysis, slot die coating)
+=======
+        #Link to class 'temperature'
+        links = ['http://purl.obolibrary.org/obo/PATO_0000146'],
+        #Link to class 'temperature setting datum'
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002111'],
+>>>>>>> ff6f4e2 (Corrected files from previous commit)
         type=np.dtype(
             np.float64),
         unit=('°C'),
@@ -167,9 +198,13 @@ class SlotDieCoating(WetChemicalDeposition):
     '''Spin Coating'''
     m_def = Section(
 <<<<<<< HEAD
+<<<<<<< HEAD
         #Link to ontology class 'slot die coating'
 =======
 >>>>>>> 2bfcffa (First Commit, added links in files annealing, quenching, sintering, wet chemical depo, dip coating, spin coating, spray pyrolysis, slot die coating)
+=======
+        #Link to class 'slot die coating'
+>>>>>>> ff6f4e2 (Corrected files from previous commit)
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00000075']
     )
     properties = SubSection(section_def=SlotDieCoatingProperties)

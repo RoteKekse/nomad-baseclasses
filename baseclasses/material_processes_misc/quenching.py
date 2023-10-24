@@ -71,7 +71,7 @@ class AntiSolventQuenching(Quenching):
 =======
         #Link to class 'volume setting datum'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002158'],
-        #Links zur Klasse 'volume'
+        #Link zur Klasse 'volume'
         links = ['http://purl.obolibrary.org/obo/PATO_0000918'],
 >>>>>>> 2bfcffa (First Commit, added links in files annealing, quenching, sintering, wet chemical depo, dip coating, spin coating, spray pyrolysis, slot die coating)
         type=np.dtype(
@@ -149,12 +149,20 @@ class GasQuenching(Quenching):
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001077']
 =======
         #Link to class 'gas quenching'
+<<<<<<< HEAD
         link = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001077']
 >>>>>>> 2bfcffa (First Commit, added links in files annealing, quenching, sintering, wet chemical depo, dip coating, spin coating, spray pyrolysis, slot die coating)
     )
     gas = Quantity(
         #Link to ontology class 'chemical substance'
         links = ['http://purl.obolibrary.org/obo/CHEBI_59999'],
+=======
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001077']
+    )
+    gas = Quantity(
+        #Link to class 'gas mixture'
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002107'],
+>>>>>>> ff6f4e2 (Corrected files from previous commit)
         type=str,
         a_eln=dict(component='StringEditQuantity'))
 
@@ -170,14 +178,18 @@ class AirKnifeGasQuenching(GasQuenching):
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005021','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005027'],
 =======
         #Link to class 'air knife gas quenching'
-        link = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005032']
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005032'],
     )
     air_knife_pressure = Quantity(
         #Link to class 'air knife pressure'
-        link = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005021'],
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005021'],
         #Link to class 'air knife pressure setting datum'
+<<<<<<< HEAD
         link = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005027'],
 >>>>>>> 2bfcffa (First Commit, added links in files annealing, quenching, sintering, wet chemical depo, dip coating, spin coating, spray pyrolysis, slot die coating)
+=======
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005027'],
+>>>>>>> ff6f4e2 (Corrected files from previous commit)
         type=np.dtype(
             np.float64),
         unit=('mbar'),
@@ -194,10 +206,14 @@ class AirKnifeGasQuenching(GasQuenching):
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005025','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005026'],
 =======
         #Link to class 'air knife speed'
-        link = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005025'],
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005025'],
         #Link to class 'air knife speed setting datum'
+<<<<<<< HEAD
         link = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005026'],
 >>>>>>> 2bfcffa (First Commit, added links in files annealing, quenching, sintering, wet chemical depo, dip coating, spin coating, spray pyrolysis, slot die coating)
+=======
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005026'],
+>>>>>>> ff6f4e2 (Corrected files from previous commit)
         type=np.dtype(
             np.float64),
         unit=('mm/s'),
@@ -214,10 +230,14 @@ class AirKnifeGasQuenching(GasQuenching):
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005024','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005029'],
 =======
         #Link to class 'air knife angle'
-        link = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005024'],
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005024'],
         #Link to class 'air knife angle setting datum'
+<<<<<<< HEAD
         link = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005029'],
 >>>>>>> 2bfcffa (First Commit, added links in files annealing, quenching, sintering, wet chemical depo, dip coating, spin coating, spray pyrolysis, slot die coating)
+=======
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005029'],
+>>>>>>> ff6f4e2 (Corrected files from previous commit)
         type=np.dtype(
             np.float64),
         unit=('degree'),
@@ -234,10 +254,14 @@ class AirKnifeGasQuenching(GasQuenching):
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005023','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005028'],
 =======
         #Link to class 'air knife distance to thinfilm'
-        link = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005023'],
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005023'],
         #Link to class 'air knife distance to thinfilm setting datum'
+<<<<<<< HEAD
         link = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005028'],
 >>>>>>> 2bfcffa (First Commit, added links in files annealing, quenching, sintering, wet chemical depo, dip coating, spin coating, spray pyrolysis, slot die coating)
+=======
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005028'],
+>>>>>>> ff6f4e2 (Corrected files from previous commit)
         type=np.dtype(
             np.float64),
         description=('The distance of the air knife to the thin film.'),

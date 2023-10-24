@@ -28,6 +28,7 @@ class Annealing(ArchiveSection):
     m_def = Section(
         #Link to class 'annealing'
 <<<<<<< HEAD
+<<<<<<< HEAD
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001033'],
     )
     temperature = Quantity(
@@ -35,10 +36,11 @@ class Annealing(ArchiveSection):
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002001','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002073'],
 =======
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001033']
+=======
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001033'],
+>>>>>>> ff6f4e2 (Corrected files from previous commit)
     )
     temperature = Quantity(
-        #Link to class 'temperature'
-        links = ['http://purl.obolibrary.org/obo/PATO_0000146'],
         #Link to class 'annealing temperature'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002001'],
         #Link to class 'annealing temperature setting datum'
@@ -54,11 +56,14 @@ class Annealing(ArchiveSection):
 
     time = Quantity(
 <<<<<<< HEAD
+<<<<<<< HEAD
         #Link to ontology class 'time', Link to ontology class 'time setting datum'
         links = ['http://purl.obolibrary.org/obo/PATO_0000165', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005085'],
 =======
         #Link to class 'time'
         links = ['http://purl.obolibrary.org/obo/PATO_0000165'],
+=======
+>>>>>>> ff6f4e2 (Corrected files from previous commit)
         #Link to class 'process time'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001063'],
         #Link to class 'process time setting datum'

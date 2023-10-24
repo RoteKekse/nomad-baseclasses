@@ -39,8 +39,12 @@ class PrecursorSolution(ArchiveSection):
                     links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001081'],
 =======
                     #Link to class 'precursor solution'
+<<<<<<< HEAD
                     links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001081']
 >>>>>>> 2bfcffa (First Commit, added links in files annealing, quenching, sintering, wet chemical depo, dip coating, spin coating, spray pyrolysis, slot die coating)
+=======
+                    links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001081'],
+>>>>>>> ff6f4e2 (Corrected files from previous commit)
                     )
     name = Quantity(type=str)
 
@@ -67,7 +71,7 @@ class PrecursorSolution(ArchiveSection):
 =======
         #Link to class 'volume setting datum'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002158'],
-        #Links zur Klasse 'volume'
+        #Link to class 'volume'
         links = ['http://purl.obolibrary.org/obo/PATO_0000918'],
 >>>>>>> 2bfcffa (First Commit, added links in files annealing, quenching, sintering, wet chemical depo, dip coating, spin coating, spray pyrolysis, slot die coating)
         type=np.dtype(
@@ -123,6 +127,7 @@ class WetChemicalDeposition(LayerDeposition):
     '''Wet Chemical Deposition'''
     m_def = Section(
 <<<<<<< HEAD
+<<<<<<< HEAD
         #Link to ontology class 'wet chemical deposition'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002051'],
     )
@@ -132,6 +137,12 @@ class WetChemicalDeposition(LayerDeposition):
     )
     #Die folgenden Qualitäten wurden nicht verlinkt/in den Mutterklassen verlinkt, da importiert.
 >>>>>>> 2bfcffa (First Commit, added links in files annealing, quenching, sintering, wet chemical depo, dip coating, spin coating, spray pyrolysis, slot die coating)
+=======
+        #Link to class 'wet chemical deposition'
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002051'],
+    )
+    
+>>>>>>> ff6f4e2 (Corrected files from previous commit)
     solution = SubSection(
         #Link to relation 'has specified input'
         section_def=PrecursorSolution, repeats=True, links = ['http://purl.obolibrary.org/obo/OBI_0000293'])
