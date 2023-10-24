@@ -33,7 +33,10 @@ from baseclasses.helper.utilities import rewrite_json_recursively
 
 class PrecursorSolution(ArchiveSection):
 
-    m_def = Section(label_quantity='name')
+    m_def = Section(label_quantity='name',
+                    #Link to class 'precursor solution'
+                    links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001081']
+                    )
     name = Quantity(type=str)
 
     reload_referenced_solution = Quantity(
@@ -43,10 +46,16 @@ class PrecursorSolution(ArchiveSection):
     )
 
     solution = Quantity(
+        #Link to class 'Solution'
+        links = ['http://purl.obolibrary.org/obo/CHEBI_75958'],
         type=Reference(Solution.m_def),
         a_eln=dict(component='ReferenceEditQuantity', label="Solution Reference"))
 
     solution_volume = Quantity(
+        #Link to class 'volume setting datum'
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002158'],
+        #Links zur Klasse 'volume'
+        links = ['http://purl.obolibrary.org/obo/PATO_0000918'],
         type=np.dtype(
             np.float64),
         unit=('ml'),
@@ -64,8 +73,7 @@ class PrecursorSolution(ArchiveSection):
         if self.reload_referenced_solution and self.solution:
             self.reload_referenced_solution = False
             rewrite_json_recursively(archive, "reload_referenced_solution", False)
-            self.solution_details = self.solution.m_copy(deep=True)
-            self.solution = None
+            self.solution_details = self.solution.m_copy()
 
         if self.solution and self.solution.name:
             if self.solution_volume:
@@ -84,7 +92,10 @@ class PrecursorSolution(ArchiveSection):
 
 class WetChemicalDeposition(LayerDeposition):
     '''Wet Chemical Deposition'''
-
+    m_def = Section(
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002051']
+    )
+    #Die folgenden Qualitäten wurden nicht verlinkt/in den Mutterklassen verlinkt, da importiert.
     solution = SubSection(
         section_def=PrecursorSolution, repeats=True)
 

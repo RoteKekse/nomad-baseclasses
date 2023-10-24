@@ -32,6 +32,10 @@ from ..material_processes_misc import Annealing, AirKnifeGasQuenching
 class SlotDieCoatingProperties(ArchiveSection):
 
     flow_rate = Quantity(
+        #Der Link zur Quality
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005039'],
+        #Der Link zum Setting Datum
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005048'],
         type=np.dtype(
             np.float64),
         unit=('ml/minute'),
@@ -40,6 +44,10 @@ class SlotDieCoatingProperties(ArchiveSection):
             defaultDisplayUnit='ml/minute', props=dict(minValue=0)))
 
     slot_die_head_width = Quantity(
+        #Der Link zur Quality
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005038'],
+        #Der Link zum Setting Datum
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005047'],
         type=np.dtype(
             np.float64),
         unit=('mm'),
@@ -50,6 +58,10 @@ class SlotDieCoatingProperties(ArchiveSection):
                 minValue=0)))
 
     slot_die_shim_width = Quantity(
+        #Der Link zur Quality
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005035'],
+        #Der Link zum Setting Datum
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005045'],
         type=np.dtype(
             np.float64),
         unit=('mm'),
@@ -60,6 +72,10 @@ class SlotDieCoatingProperties(ArchiveSection):
                 minValue=0)))
 
     slot_die_shim_thickness = Quantity(
+        #Der Link zur Quality
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005036'],
+        #Der Link zum Setting Datum
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005046'],
         type=np.dtype(
             np.float64),
         unit=('mm'),
@@ -70,6 +86,10 @@ class SlotDieCoatingProperties(ArchiveSection):
                 minValue=0)))
 
     slot_die_head_distance_to_thinfilm = Quantity(
+        #Der Link zur Quality
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005034'],
+        #Der Link zum Setting Datum
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005044'],
         type=np.dtype(
             np.float64),
         unit=('mm'),
@@ -78,7 +98,12 @@ class SlotDieCoatingProperties(ArchiveSection):
             defaultDisplayUnit='mm',
             props=dict(
                 minValue=0)))
+    
     slot_die_head_speed = Quantity(
+        #Der Link zur Quality
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005033'],
+        #Der Link zum Setting Datum
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005033'],
         type=np.dtype(
             np.float64),
         unit=('mm/s'),
@@ -89,6 +114,10 @@ class SlotDieCoatingProperties(ArchiveSection):
                 minValue=0)))
 
     temperature = Quantity(
+        #Der Link zur Quality
+        links = ['http://purl.obolibrary.org/obo/PATO_0000146'],
+        #Der Link zum Setting Datum
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#print_head_temperature_setting_datum'],
         type=np.dtype(
             np.float64),
         unit=('°C'),
@@ -101,8 +130,11 @@ class SlotDieCoatingProperties(ArchiveSection):
 
 class SlotDieCoating(WetChemicalDeposition):
     '''Spin Coating'''
-
+    m_def = Section(
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00000075']
+    )
     properties = SubSection(section_def=SlotDieCoatingProperties)
+    
 
     def normalize(self, archive, logger):
         super(SlotDieCoating, self).normalize(archive, logger)

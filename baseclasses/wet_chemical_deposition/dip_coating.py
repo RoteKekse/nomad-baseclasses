@@ -32,6 +32,10 @@ from .wet_chemical_deposition import WetChemicalDeposition
 class DipCoatingProperties(ArchiveSection):
 
     time = Quantity(
+        #Link zur Klasse 'process time'
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001063'],
+        #Link zur Klasse 'process time setting datum'
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002072'],
         type=np.dtype(
             np.float64),
         unit=('minute'),
@@ -44,6 +48,10 @@ class DipCoatingProperties(ArchiveSection):
 
 class DipCoating(WetChemicalDeposition):
     '''Base class for spin coating of a sample'''
+    m_def = Section(
+        #Link to class 'dip coating'
+        links = ['http://purl.obolibrary.org/obo/CHMO_0001471'],
+        )
 
     properties = SubSection(
         section_def=DipCoatingProperties)
