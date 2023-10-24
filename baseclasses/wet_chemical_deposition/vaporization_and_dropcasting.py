@@ -30,11 +30,17 @@ from .wet_chemical_deposition import WetChemicalDeposition
 class VaporizationProperties(ArchiveSection):
 
     temperature = Quantity(
+        #Link to class 'temperature'
+        links = ['http://purl.obolibrary.org/obo/PATO_0000146'],
+        #Link to class 'temperature setting datum'
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002111'],
         type=np.dtype(np.float64),
         unit=('°C'),
         a_eln=dict(component='NumberEditQuantity', defaultDisplayUnit='°C'))
 
     initial_time = Quantity(
+        #Link to class 'time'
+        links = ['http://purl.obolibrary.org/obo/PATO_0000165'],
         type=Datetime,
         a_eln=dict(component='DateTimeEditQuantity'))
 
