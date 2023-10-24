@@ -55,7 +55,7 @@ class AntiSolventQuenching(Quenching):
     anti_solvent_volume = Quantity(
         #Link to class 'volume setting datum'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002158'],
-        #Links zur Klasse 'volume'
+        #Link zur Klasse 'volume'
         links = ['http://purl.obolibrary.org/obo/PATO_0000918'],
         type=np.dtype(
             np.float64),
@@ -113,9 +113,11 @@ class SpinCoatingAntiSolvent(AntiSolventQuenching):
 class GasQuenching(Quenching):
     m_def = Section(
         #Link to class 'gas quenching'
-        link = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001077']
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001077']
     )
     gas = Quantity(
+        #Link to class 'gas mixture'
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002107'],
         type=str,
         a_eln=dict(component='StringEditQuantity'))
 
@@ -123,13 +125,13 @@ class GasQuenching(Quenching):
 class AirKnifeGasQuenching(GasQuenching):
     m_def = Section(
         #Link to class 'air knife gas quenching'
-        link = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005032']
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005032'],
     )
     air_knife_pressure = Quantity(
         #Link to class 'air knife pressure'
-        link = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005021'],
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005021'],
         #Link to class 'air knife pressure setting datum'
-        link = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005027'],
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005027'],
         type=np.dtype(
             np.float64),
         unit=('mbar'),
@@ -142,9 +144,9 @@ class AirKnifeGasQuenching(GasQuenching):
 
     air_knife_speed = Quantity(
         #Link to class 'air knife speed'
-        link = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005025'],
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005025'],
         #Link to class 'air knife speed setting datum'
-        link = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005026'],
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005026'],
         type=np.dtype(
             np.float64),
         unit=('mm/s'),
@@ -157,9 +159,9 @@ class AirKnifeGasQuenching(GasQuenching):
 
     air_knife_angle = Quantity(
         #Link to class 'air knife angle'
-        link = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005024'],
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005024'],
         #Link to class 'air knife angle setting datum'
-        link = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005029'],
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005029'],
         type=np.dtype(
             np.float64),
         unit=('degree'),
@@ -172,9 +174,9 @@ class AirKnifeGasQuenching(GasQuenching):
 
     air_knife_distance_to_thin_film = Quantity(
         #Link to class 'air knife distance to thinfilm'
-        link = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005023'],
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005023'],
         #Link to class 'air knife distance to thinfilm setting datum'
-        link = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005028'],
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005028'],
         type=np.dtype(
             np.float64),
         description=('The distance of the air knife to the thin film.'),

@@ -27,7 +27,9 @@ class Sintering(ArchiveSection):
     '''Base class for sintering of a sample'''
     temperature = Quantity(
         #Link to class 'temperature'
-        link = ['http://purl.obolibrary.org/obo/PATO_0000146'],
+        links = ['http://purl.obolibrary.org/obo/PATO_0000146'],
+        #Link to class 'temperature setting datum'
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002111'],
         type=np.dtype(
             np.float64),
         unit=('°C'),
@@ -38,9 +40,9 @@ class Sintering(ArchiveSection):
 
     time = Quantity(
         #Link to class 'process time'
-        link = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001063'],
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001063'],
         #Link to class 'process time setting datum'
-        link = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002072'],
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002072'],
         type=np.dtype(
             np.float64),
         unit=('s'),
