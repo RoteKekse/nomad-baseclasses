@@ -47,6 +47,11 @@ class VaporizationProperties(ArchiveSection):
 
 class VaporizationAndDropCasting(WetChemicalDeposition):
     '''Base class for spin coating of a sample'''
+    m_def = Section(
+        #Link to class 'Drop casting'
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002059'],
+
+    )
 
     properties = SubSection(
         section_def=VaporizationProperties, repeats=True)
