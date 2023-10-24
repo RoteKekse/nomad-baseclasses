@@ -25,7 +25,17 @@ from nomad.datamodel.data import ArchiveSection
 
 class Annealing(ArchiveSection):
     '''Base class for annealing of a sample'''
+    m_def = Section(
+        #Link to class 'annealing'
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001033']
+    )
     temperature = Quantity(
+        #Link to class 'temperature'
+        links = ['http://purl.obolibrary.org/obo/PATO_0000146'],
+        #Link to class 'annealing temperature'
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002001'],
+        #Link to class 'annealing temperature setting datum'
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002073'],
         type=np.dtype(
             np.float64),
         unit=('°C'),
@@ -35,6 +45,12 @@ class Annealing(ArchiveSection):
             defaultDisplayUnit='°C'))
 
     time = Quantity(
+        #Link to class 'time'
+        links = ['http://purl.obolibrary.org/obo/PATO_0000165'],
+        #Link to class 'process time'
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001063'],
+        #Link to class 'process time setting datum'
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002072'],
         type=np.dtype(
             np.float64),
         unit=('s'),
