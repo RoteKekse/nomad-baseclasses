@@ -26,8 +26,13 @@ from nomad.datamodel.data import ArchiveSection
 class Sintering(ArchiveSection):
     '''Base class for sintering of a sample'''
     temperature = Quantity(
+<<<<<<< HEAD
         #Link to ontology class 'temperature', Link to ontology class 'temperature setting datum'
         links = ['http://purl.obolibrary.org/obo/PATO_0000146','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002111'],
+=======
+        #Link to class 'temperature'
+        link = ['http://purl.obolibrary.org/obo/PATO_0000146'],
+>>>>>>> 2bfcffa (First Commit, added links in files annealing, quenching, sintering, wet chemical depo, dip coating, spin coating, spray pyrolysis, slot die coating)
         type=np.dtype(
             np.float64),
         unit=('°C'),
@@ -37,8 +42,15 @@ class Sintering(ArchiveSection):
             defaultDisplayUnit='°C'))
 
     time = Quantity(
+<<<<<<< HEAD
         #Link to ontology class 'process time', Link to ontology class 'process time setting datum'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001063','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002072'],
+=======
+        #Link to class 'process time'
+        link = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001063'],
+        #Link to class 'process time setting datum'
+        link = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002072'],
+>>>>>>> 2bfcffa (First Commit, added links in files annealing, quenching, sintering, wet chemical depo, dip coating, spin coating, spray pyrolysis, slot die coating)
         type=np.dtype(
             np.float64),
         unit=('s'),
