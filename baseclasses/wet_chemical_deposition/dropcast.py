@@ -37,7 +37,7 @@ class DropCastingProperties(ArchiveSection):
         links = ['http://purl.obolibrary.org/obo/PATO_0000918', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002158'],
 =======
         #Link to class 'volume'
-        links = ['http://purl.obolibrary.org/obo/PATO_0000918'];
+        links = ['http://purl.obolibrary.org/obo/PATO_0000918'],
         #Link to class 'volume setting datum'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002158'],
 >>>>>>> 93909fc (Added links in files dip coating, vaporization and dropcasting, dropcasting)
