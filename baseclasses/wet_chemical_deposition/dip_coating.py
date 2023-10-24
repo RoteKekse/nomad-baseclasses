@@ -32,9 +32,9 @@ from .wet_chemical_deposition import WetChemicalDeposition
 class DipCoatingProperties(ArchiveSection):
 
     time = Quantity(
-        #Link zur Klasse 'process time'
+        #Link to class 'process time'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001063'],
-        #Link zur Klasse 'process time setting datum'
+        #Link to class 'process time setting datum'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002072'],
         type=np.dtype(
             np.float64),
