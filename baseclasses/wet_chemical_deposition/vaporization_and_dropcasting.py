@@ -58,7 +58,11 @@ class VaporizationProperties(ArchiveSection):
 class VaporizationAndDropCasting(WetChemicalDeposition):
     '''Base class for spin coating of a sample'''
     m_def = Section(
+<<<<<<< HEAD
         #Link to ontology class 'Drop casting'
+=======
+        #Link to class 'Drop casting'
+>>>>>>> 30bb487 (Added link to drop casting in vaporization and dropcasting file)
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002059'],
 
     )
