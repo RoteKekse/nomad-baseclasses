@@ -30,15 +30,27 @@ from .wet_chemical_deposition import WetChemicalDeposition
 class VaporizationProperties(ArchiveSection):
 
     temperature = Quantity(
+<<<<<<< HEAD
         #Link to ontology class 'temperature', Link to ontology class 'temperature setting datum'
         links = ['http://purl.obolibrary.org/obo/PATO_0000146', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002111'],
+=======
+        #Link to class 'temperature'
+        links = ['http://purl.obolibrary.org/obo/PATO_0000146'],
+        #Link to class 'temperature setting datum'
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002111'],
+>>>>>>> 93909fc (Added links in files dip coating, vaporization and dropcasting, dropcasting)
         type=np.dtype(np.float64),
         unit=('°C'),
         a_eln=dict(component='NumberEditQuantity', defaultDisplayUnit='°C'))
 
     initial_time = Quantity(
+<<<<<<< HEAD
         #Link to ontology class 'time', Link to ontology class 'time setting datum'
         links = ['http://purl.obolibrary.org/obo/PATO_0000165', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005085'],
+=======
+        #Link to class 'time'
+        links = ['http://purl.obolibrary.org/obo/PATO_0000165'],
+>>>>>>> 93909fc (Added links in files dip coating, vaporization and dropcasting, dropcasting)
         type=Datetime,
         a_eln=dict(component='DateTimeEditQuantity'))
 
