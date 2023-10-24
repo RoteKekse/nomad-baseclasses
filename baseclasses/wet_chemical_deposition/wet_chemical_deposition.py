@@ -35,7 +35,7 @@ class PrecursorSolution(ArchiveSection):
 
     m_def = Section(label_quantity='name',
                     #Link to class 'precursor solution'
-                    links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001081']
+                    links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001081'],
                     )
     name = Quantity(type=str)
 
@@ -54,7 +54,7 @@ class PrecursorSolution(ArchiveSection):
     solution_volume = Quantity(
         #Link to class 'volume setting datum'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002158'],
-        #Links zur Klasse 'volume'
+        #Link to class 'volume'
         links = ['http://purl.obolibrary.org/obo/PATO_0000918'],
         type=np.dtype(
             np.float64),
@@ -93,9 +93,10 @@ class PrecursorSolution(ArchiveSection):
 class WetChemicalDeposition(LayerDeposition):
     '''Wet Chemical Deposition'''
     m_def = Section(
-        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002051']
+        #Link to class 'wet chemical deposition'
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002051'],
     )
-    #Die folgenden Qualitäten wurden nicht verlinkt/in den Mutterklassen verlinkt, da importiert.
+    
     solution = SubSection(
         section_def=PrecursorSolution, repeats=True)
 
