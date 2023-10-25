@@ -41,7 +41,11 @@ class PVDProcess(ArchiveSection):
         section_def=PubChemPureSubstanceSection, repeats=True)
 
     power = Quantity(
+<<<<<<< HEAD
         #Link to ontology class 'power', Link to ontology class 'power setting datum'
+=======
+        #Link to class 'power', Link to class 'power setting datum'
+>>>>>>> 46c0756 (Started adding links to vapour based deposition)
         links = ['http://purl.obolibrary.org/obo/PATO_0001024','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002104'],
         type=np.dtype(
             np.float64),
@@ -65,8 +69,13 @@ class PVDProcess(ArchiveSection):
                 minValue=0)))
 
     time = Quantity(
+<<<<<<< HEAD
         #Link to ontology class 'time', Link to ontology class 'time setting datum'
         links = ['http://purl.obolibrary.org/obo/PATO_0000165', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005085'],
+=======
+        #Link to class 'process time', Link to class 'process time setting datum'
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001063','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002072'],
+>>>>>>> 46c0756 (Started adding links to vapour based deposition)
         type=np.dtype(
             np.float64),
         unit=('s'),
@@ -84,8 +93,13 @@ class PVDProcess(ArchiveSection):
         a_eln=dict(component='NumberEditQuantity', defaultDisplayUnit='1/s'))
 
     temperature = Quantity(
+<<<<<<< HEAD
         #Link to ontology class 'temperature', Link to ontology class 'temperature setting datum'
         links = ['http://purl.obolibrary.org/obo/PATO_0000146','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002111'],
+=======
+        #Link to class 'substrate temperature', Link to class 'substrate temperature setting datum'
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00009996','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00009995'],
+>>>>>>> 46c0756 (Started adding links to vapour based deposition)
         type=np.dtype(np.float64),
         unit=('°C'),
         a_eln=dict(component='NumberEditQuantity', defaultDisplayUnit='°C'))
@@ -102,7 +116,11 @@ class PVDProcess(ArchiveSection):
 class PVDeposition(LayerDeposition):
     '''Base class for evaporation of a sample'''
     m_def = Section(
+<<<<<<< HEAD
         #Link to ontology class 'physical vapour deposition'
+=======
+        #Link to class 'physical vapour deposition'
+>>>>>>> 46c0756 (Started adding links to vapour based deposition)
         links = ['http://purl.obolibrary.org/obo/CHMO_0001356'],
     )
 

@@ -101,8 +101,13 @@ class PerovsciteEvaporation(ArchiveSection):
 
 class Evaporation(ArchiveSection):
     m_def = Section(label_quantity='name'
+<<<<<<< HEAD
                     #Link to ontology class 'evporation'
                     #links = [class doesnt exist],
+=======
+                    #Link to class 'evaporation'
+                    links
+>>>>>>> 46c0756 (Started adding links to vapour based deposition)
                     )
     name = Quantity(
         type=str
