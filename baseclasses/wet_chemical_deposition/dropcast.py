@@ -32,10 +32,8 @@ class DropCastingProperties(ArchiveSection):
             component='NumberEditQuantity'))
 
     dropcast_amount = Quantity(
-        #Link to class 'volume'
-        links = ['http://purl.obolibrary.org/obo/PATO_0000918'],
-        #Link to class 'volume setting datum'
-        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002158'],
+        #Link to class 'volume', Link to class 'volume setting datum'
+        links = ['http://purl.obolibrary.org/obo/PATO_0000918', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002158'],
         type=np.dtype(
             np.float64),
         unit=('ml'),
@@ -44,10 +42,8 @@ class DropCastingProperties(ArchiveSection):
             defaultDisplayUnit='ml'))
 
     temperature = Quantity(
-        #Link to class 'temperature'
-        links = ['http://purl.obolibrary.org/obo/PATO_0000146'],
-        #Link to class 'temperature setting datum'
-        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002111'],
+        #Link to class 'temperature', Link to class 'temperature setting datum'
+        links = ['http://purl.obolibrary.org/obo/PATO_0000146', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002111'],
         type=np.dtype(
             np.float64),
         unit=('°C'),
