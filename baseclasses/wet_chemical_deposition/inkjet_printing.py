@@ -144,9 +144,8 @@ class LP50PrintHeadPath(PrintHeadPath):
         ))
 
     directional = Quantity(
-        #Link to class 'printing direction' (to be added)
+        #Link to class 'printing direction'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005077'],
-        #Link to class 'printing direction setting datum'
         type=MEnum('uni-directional', 'bi-directional',
                    'uni-directional reverse'),
         shape=[],
@@ -338,6 +337,8 @@ class LP50InkjetPrinting(WetChemicalDeposition):
         a_browser=dict(adaptor='RawFileAdaptor'))
 
     print_head_used = Quantity(
+        #Link to class 'print head', Link to relation 'has participant'
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005064','http://purl.obolibrary.org/obo/RO_0000057'],
         type=str,
         a_eln=dict(component='FileEditQuantity'),
         a_browser=dict(adaptor='RawFileAdaptor'))
@@ -346,9 +347,13 @@ class LP50InkjetPrinting(WetChemicalDeposition):
         section_def=LP50InkjetPrintingProperties)
 
     print_head_path = SubSection(
+        #Link to class 'print head path', Link to relation 'has_specified_input'
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005084','http://purl.obolibrary.org/obo/OBI_0000293'],
         section_def=LP50PrintHeadPath)
 
     nozzle_voltage_profile = SubSection(
+        #Link to class 'print nozzle voltage profile', Link to relation 'has_specified_input'
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005083','http://purl.obolibrary.org/obo/OBI_0000293'],
         section_def=LP50NozzleVoltageProfile)
 
     def normalize(self, archive, logger):
