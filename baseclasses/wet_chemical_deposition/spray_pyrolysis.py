@@ -32,19 +32,15 @@ from ..material_processes_misc import Annealing
 class SprayPyrolysisProperties(ArchiveSection):
 
     temperature = Quantity(
-        #Link to class 'temperature'
-        links = ['http://purl.obolibrary.org/obo/PATO_0000146'],
-        #Link to class 'temperature setting datum'
-        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002111'],
+        #Link to class 'temperature', Link to class 'temperature setting datum'
+        links = ['http://purl.obolibrary.org/obo/PATO_0000146', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002111'],
         type=np.dtype(np.float64),
         unit=('°C'),
         a_eln=dict(component='NumberEditQuantity', defaultDisplayUnit='°C'))
 
     time = Quantity(
-        #Link to class 'process time'
-        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001063'],
-        #Link to class 'process time setting datum'
-        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002072'],
+        #Link to class 'process time', Link to class 'process time setting datum'
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001063', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002072'],
         type=np.dtype(np.float64),
         unit=('minute'),
         a_eln=dict(component='NumberEditQuantity', defaultDisplayUnit='minute'))
