@@ -90,7 +90,10 @@ class PerovsciteEvaporation(ArchiveSection):
 
 
 class Evaporation(ArchiveSection):
-    m_def = Section(label_quantity='name')
+    m_def = Section(label_quantity='name'
+                    #Link to class 'evaporation'
+                    links
+                    )
     name = Quantity(
         type=str
     )
