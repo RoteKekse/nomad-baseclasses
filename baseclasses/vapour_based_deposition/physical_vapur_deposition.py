@@ -37,6 +37,8 @@ class PVDProcess(ArchiveSection):
         section_def=PubChemPureSubstanceSection, repeats=True)
 
     power = Quantity(
+        #Link to class 'power', Link to class 'power setting datum'
+        links = ['http://purl.obolibrary.org/obo/PATO_0001024','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002104'],
         type=np.dtype(
             np.float64),
         unit=('W'),
@@ -57,6 +59,8 @@ class PVDProcess(ArchiveSection):
                 minValue=0)))
 
     time = Quantity(
+        #Link to class 'process time', Link to class 'process time setting datum'
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001063','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002072'],
         type=np.dtype(
             np.float64),
         unit=('s'),
@@ -72,6 +76,8 @@ class PVDProcess(ArchiveSection):
         a_eln=dict(component='NumberEditQuantity', defaultDisplayUnit='1/s'))
 
     temperature = Quantity(
+        #Link to class 'substrate temperature', Link to class 'substrate temperature setting datum'
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00009996','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00009995'],
         type=np.dtype(np.float64),
         unit=('°C'),
         a_eln=dict(component='NumberEditQuantity', defaultDisplayUnit='°C'))
@@ -87,6 +93,10 @@ class PVDProcess(ArchiveSection):
 
 class PVDeposition(LayerDeposition):
     '''Base class for evaporation of a sample'''
+    m_def = Section(
+        #Link to class 'physical vapour deposition'
+        links = ['http://purl.obolibrary.org/obo/CHMO_0001356'],
+    )
 
     process = SubSection(
         section_def=PVDProcess)
