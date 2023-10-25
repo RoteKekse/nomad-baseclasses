@@ -66,6 +66,7 @@ class PrecursorSolution(ArchiveSection):
 
     solution_volume = Quantity(
 <<<<<<< HEAD
+<<<<<<< HEAD
         #Link to ontology class 'volume setting datum', Link to ontology class 'volume'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002158', 'http://purl.obolibrary.org/obo/PATO_0000918'],
 =======
@@ -74,6 +75,10 @@ class PrecursorSolution(ArchiveSection):
         #Link to class 'volume'
         links = ['http://purl.obolibrary.org/obo/PATO_0000918'],
 >>>>>>> 2bfcffa (First Commit, added links in files annealing, quenching, sintering, wet chemical depo, dip coating, spin coating, spray pyrolysis, slot die coating)
+=======
+        #Link to class 'volume setting datum', Link to class 'volume'
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002158', 'http://purl.obolibrary.org/obo/PATO_0000918'],
+>>>>>>> 1916ad1 (Fixed double links)
         type=np.dtype(
             np.float64),
         unit=('ml'),

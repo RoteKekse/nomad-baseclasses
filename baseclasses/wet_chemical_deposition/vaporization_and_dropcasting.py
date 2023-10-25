@@ -31,6 +31,7 @@ class VaporizationProperties(ArchiveSection):
 
     temperature = Quantity(
 <<<<<<< HEAD
+<<<<<<< HEAD
         #Link to ontology class 'temperature', Link to ontology class 'temperature setting datum'
         links = ['http://purl.obolibrary.org/obo/PATO_0000146', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002111'],
 =======
@@ -39,6 +40,10 @@ class VaporizationProperties(ArchiveSection):
         #Link to class 'temperature setting datum'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002111'],
 >>>>>>> 93909fc (Added links in files dip coating, vaporization and dropcasting, dropcasting)
+=======
+        #Link to class 'temperature', Link to class 'temperature setting datum'
+        links = ['http://purl.obolibrary.org/obo/PATO_0000146', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002111'],
+>>>>>>> 1916ad1 (Fixed double links)
         type=np.dtype(np.float64),
         unit=('°C'),
         a_eln=dict(component='NumberEditQuantity', defaultDisplayUnit='°C'))

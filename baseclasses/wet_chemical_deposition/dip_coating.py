@@ -34,6 +34,7 @@ class DipCoatingProperties(ArchiveSection):
     time = Quantity(
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         #Link to ontology class 'time', Link to ontology class 'time setting datum'
         links = ['http://purl.obolibrary.org/obo/PATO_0000165', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005085'],
 =======
@@ -45,6 +46,10 @@ class DipCoatingProperties(ArchiveSection):
         #Link to class 'process time setting datum'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002072'],
 >>>>>>> 2bfcffa (First Commit, added links in files annealing, quenching, sintering, wet chemical depo, dip coating, spin coating, spray pyrolysis, slot die coating)
+=======
+        #Link to class 'process time', Link to class 'process time setting datum'
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001063', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002072'],
+>>>>>>> 1916ad1 (Fixed double links)
         type=np.dtype(
             np.float64),
         unit=('minute'),
