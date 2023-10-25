@@ -111,12 +111,14 @@ class WetChemicalDeposition(LayerDeposition):
     )
     
     solution = SubSection(
-        section_def=PrecursorSolution, repeats=True)
-
-    annealing = SubSection(section_def=Annealing)
-    quenching = SubSection(section_def=Quenching)
-
-    sintering = SubSection(section_def=Sintering, repeats=True)
+        #Link to relation 'has specified input'
+        section_def=PrecursorSolution, repeats=True, links = ['http://purl.obolibrary.org/obo/OBI_0000293'])
+    #Link to relation 'has part'
+    annealing = SubSection(section_def=Annealing, links = ['http://purl.obolibrary.org/obo/RO_0001019'])
+    #Link to relation 'has part'
+    quenching = SubSection(section_def=Quenching, links = ['http://purl.obolibrary.org/obo/RO_0001019'])
+    #Link to relation 'has part'
+    sintering = SubSection(section_def=Sintering, repeats=True, links = ['http://purl.obolibrary.org/obo/RO_0001019'])
 
     def normalize(self, archive, logger):
 <<<<<<< HEAD
