@@ -37,10 +37,8 @@ class SpinCoatingRecipeSteps(ArchiveSection):
                     a_eln=dict(component='StringEditQuantity'))
 
     time = Quantity(
-        #Link to class 'process time'
-        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001063'],
-        #Link to class 'process time setting datum'
-        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002072'],
+        #Link to class 'process time', Link to class 'process time setting datum'
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001063', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002072'],
         type=np.dtype(
             np.float64),
         unit=('s'),
@@ -51,10 +49,8 @@ class SpinCoatingRecipeSteps(ArchiveSection):
                 minValue=0)))
 
     speed = Quantity(
-        #Link to class 'rotation speed'
-        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002026'],
-        #Link to class 'rotation speed setting datum'
-        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002005'],
+        #Link to class 'rotation speed', Link to class 'rotation speed setting datum'
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002026', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002005'],
         type=np.dtype(
             np.float64),
         unit=('rpm'),
@@ -65,10 +61,8 @@ class SpinCoatingRecipeSteps(ArchiveSection):
                 minValue=0)))
 
     acceleration = Quantity(
-        #Link to class 'rotation acceleration'
-        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002049'],
-        #Link to class 'rotation acceleration setting datum'
-        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002002'],
+        #Link to class 'rotation acceleration', Link to class 'rotation acceleration setting datum'
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002049', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002002'],
         type=np.dtype(
             np.float64),
         unit=('rpm/s'),

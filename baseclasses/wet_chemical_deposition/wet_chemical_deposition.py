@@ -52,10 +52,8 @@ class PrecursorSolution(ArchiveSection):
         a_eln=dict(component='ReferenceEditQuantity', label="Solution Reference"))
 
     solution_volume = Quantity(
-        #Link to class 'volume setting datum'
-        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002158'],
-        #Link to class 'volume'
-        links = ['http://purl.obolibrary.org/obo/PATO_0000918'],
+        #Link to class 'volume setting datum', Link to class 'volume'
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002158', 'http://purl.obolibrary.org/obo/PATO_0000918'],
         type=np.dtype(
             np.float64),
         unit=('ml'),
