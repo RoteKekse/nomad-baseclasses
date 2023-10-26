@@ -114,7 +114,7 @@ class EvaporationSources(ArchiveSection):
     #     diff = self.mass_after_weighing - self.mass_before_weighing
 
 
-class PerovsciteEvaporation(ArchiveSection):
+class PerovskiteEvaporation(ArchiveSection):
     evaporation_sources = SubSection(
         section_def=EvaporationSources, repeats=True)
 
@@ -189,6 +189,7 @@ class Evaporation(ArchiveSection):
     pressure = Quantity(
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         #Link to ontology class 'pressure', Link to ontology class 'pressure setting datum'
         links = ['http://purl.obolibrary.org/obo/PATO_0001025','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005040'],
 =======
@@ -197,6 +198,9 @@ class Evaporation(ArchiveSection):
 >>>>>>> 1a08f68 (Added further links to vapour based deposition (evaporation; pvd))
 =======
         #Link to class 'pressure'
+=======
+        #Link to class 'pressure', Link to class 'pressure setting datum'
+>>>>>>> 5a9d42b (see last commit, forgot to save locally)
         links = ['http://purl.obolibrary.org/obo/PATO_0001025','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005040'],
 >>>>>>> cd7fa1c (Added links to pevcd, fixed spelling error perovscite)
         type=np.dtype(
@@ -317,7 +321,7 @@ class Evaporations(LayerDeposition):
     inorganic_evaporation = SubSection(
         section_def=InorganicEvaporation, repeats=True)
 
-    perovscite_evaporation = SubSection(
+    perovskite_evaporation = SubSection(
         section_def=InorganicEvaporation, repeats=True)
 
     def normalize(self, archive, logger):
