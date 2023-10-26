@@ -57,8 +57,13 @@ class PVDProcess(ArchiveSection):
                 minValue=0)))
 
     pressure = Quantity(
+<<<<<<< HEAD
         #Link to ontology class 'pressure'
         links = ['http://purl.obolibrary.org/obo/PATO_0001025'],
+=======
+        #Link to class 'total pressure'
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001094'],
+>>>>>>> 1a08f68 (Added further links to vapour based deposition (evaporation; pvd))
         type=np.dtype(
             np.float64),
         unit=('ubar'),
@@ -86,7 +91,11 @@ class PVDProcess(ArchiveSection):
                 minValue=0)))
 
     rotation_speed = Quantity(
+<<<<<<< HEAD
         #Link to ontology class 'Rotation speed', Link to ontology class 'rotation speed setting datum'
+=======
+        #Link to class 'Rotation speed', Link to class 'rotation speed setting datum'
+>>>>>>> 1a08f68 (Added further links to vapour based deposition (evaporation; pvd))
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002026','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002005'],
         type=np.dtype(np.float64),
         unit=('1/s'),

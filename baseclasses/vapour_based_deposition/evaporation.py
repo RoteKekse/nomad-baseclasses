@@ -28,13 +28,21 @@ from ..chemical import Chemical
 
 class EvaporationSources(ArchiveSection):
     chemical = Quantity(
+<<<<<<< HEAD
         #Link to ontology class 'chemical substance'
+=======
+        #Link to class 'chemical substance'
+>>>>>>> 1a08f68 (Added further links to vapour based deposition (evaporation; pvd))
         links = ['http://purl.obolibrary.org/obo/CHEBI_59999'],
         type=Reference(Chemical.m_def),
         a_eln=dict(component='ReferenceEditQuantity'))
 
     chemical_2 = SubSection(
+<<<<<<< HEAD
         #Link to ontology class 'chemical substance'
+=======
+        #Link to class 'chemical substance'
+>>>>>>> 1a08f68 (Added further links to vapour based deposition (evaporation; pvd))
         links = ['http://purl.obolibrary.org/obo/CHEBI_59999'],
         section_def=PubChemPureSubstanceSection)
 
@@ -53,7 +61,11 @@ class EvaporationSources(ArchiveSection):
         a_eln=dict(component='NumberEditQuantity'))
 
     mass_before_weighing = Quantity(
+<<<<<<< HEAD
         #Link to ontology class 'mass'
+=======
+        #Link to class 'mass'
+>>>>>>> 1a08f68 (Added further links to vapour based deposition (evaporation; pvd))
         links = ['http://purl.obolibrary.org/obo/PATO_0000125'],
         type=np.dtype(
             np.float64),
@@ -65,7 +77,11 @@ class EvaporationSources(ArchiveSection):
                 minValue=0)))
 
     mass_after_weighing = Quantity(
+<<<<<<< HEAD
         #Link to ontology class 'mass'
+=======
+        #Link to class 'mass'
+>>>>>>> 1a08f68 (Added further links to vapour based deposition (evaporation; pvd))
         links = ['http://purl.obolibrary.org/obo/PATO_0000125'],
         type=np.dtype(
             np.float64),
@@ -77,7 +93,11 @@ class EvaporationSources(ArchiveSection):
                 minValue=0)))
 
     mass_after_processing = Quantity(
+<<<<<<< HEAD
         #Link to ontology class 'mass'
+=======
+        #Link to class 'mass'
+>>>>>>> 1a08f68 (Added further links to vapour based deposition (evaporation; pvd))
         links = ['http://purl.obolibrary.org/obo/PATO_0000125'],
         type=np.dtype(
             np.float64), unit=('g'), a_eln=dict(
@@ -102,25 +122,38 @@ class PerovsciteEvaporation(ArchiveSection):
 class Evaporation(ArchiveSection):
     m_def = Section(label_quantity='name'
 <<<<<<< HEAD
+<<<<<<< HEAD
                     #Link to ontology class 'evporation'
                     #links = [class doesnt exist],
 =======
                     #Link to class 'evaporation'
                     links
 >>>>>>> 46c0756 (Started adding links to vapour based deposition)
+=======
+                    #Link to class 'evporation'
+                    #links = [class doesnt exist],
+>>>>>>> 1a08f68 (Added further links to vapour based deposition (evaporation; pvd))
                     )
     name = Quantity(
         type=str
     )
 
     chemical = Quantity(
+<<<<<<< HEAD
         #Link to ontology class 'chemical substance'
+=======
+        #Link to class 'chemical substance'
+>>>>>>> 1a08f68 (Added further links to vapour based deposition (evaporation; pvd))
         links = ['http://purl.obolibrary.org/obo/CHEBI_59999'],
         type=Reference(Chemical.m_def),
         a_eln=dict(component='ReferenceEditQuantity'))
 
     chemical_2 = SubSection(
+<<<<<<< HEAD
         #Link to ontology class 'chemical substance'
+=======
+        #Link to class 'chemical substance'
+>>>>>>> 1a08f68 (Added further links to vapour based deposition (evaporation; pvd))
         links = ['http://purl.obolibrary.org/obo/CHEBI_59999'],
         section_def=PubChemPureSubstanceSection)
 
@@ -138,7 +171,11 @@ class Evaporation(ArchiveSection):
                     'ULTE2'])))
 
     thickness = Quantity(
+<<<<<<< HEAD
         #Link to ontology class 'thickness'
+=======
+        #Link to class 'thickness'
+>>>>>>> 1a08f68 (Added further links to vapour based deposition (evaporation; pvd))
         links = ['http://purl.obolibrary.org/obo/PATO_0000915'],
         type=np.dtype(
             np.float64),
@@ -150,8 +187,13 @@ class Evaporation(ArchiveSection):
                 minValue=0)))
 
     pressure = Quantity(
+<<<<<<< HEAD
         #Link to ontology class 'pressure', Link to ontology class 'pressure setting datum'
         links = ['http://purl.obolibrary.org/obo/PATO_0001025','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005040'],
+=======
+        #Link to class 'total pressure'
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001094'],
+>>>>>>> 1a08f68 (Added further links to vapour based deposition (evaporation; pvd))
         type=np.dtype(
             np.float64),
         unit=('mbar'),
@@ -182,8 +224,13 @@ class Evaporation(ArchiveSection):
             defaultDisplayUnit='angstrom/s', props=dict(minValue=0)))
 
     time = Quantity(
+<<<<<<< HEAD
         #Link to ontology class 'time', Link to ontology class 'time setting datum'
         links = ['http://purl.obolibrary.org/obo/PATO_0000165', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005085'],
+=======
+        #Link to class 'process time', Link to class 'process time setting datum'
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001063','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002072'],
+>>>>>>> 1a08f68 (Added further links to vapour based deposition (evaporation; pvd))
         type=np.dtype(
             np.float64),
         unit=('s'),
@@ -212,8 +259,13 @@ class Evaporation(ArchiveSection):
 
 class OrganicEvaporation(Evaporation):
     temparature = Quantity(
+<<<<<<< HEAD
         #Link to ontology class 'temperature', Link to ontology class 'process temperature setting datum'
         links = ['http://purl.obolibrary.org/obo/PATO_0000146','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002111'],
+=======
+        #Link to class 'process temperature', Link to class 'process temperature setting datum'
+        links = ['','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002071'],
+>>>>>>> 1a08f68 (Added further links to vapour based deposition (evaporation; pvd))
         type=np.dtype(
             np.float64),
         unit=('°C'),
@@ -226,7 +278,11 @@ class OrganicEvaporation(Evaporation):
 
 class InorganicEvaporation(Evaporation):
     power = Quantity(
+<<<<<<< HEAD
         #Link to ontology class 'power', Link to ontology class 'power setting datum'
+=======
+        #Link to class 'power', Link to class 'power setting datum'
+>>>>>>> 1a08f68 (Added further links to vapour based deposition (evaporation; pvd))
         links = ['http://purl.obolibrary.org/obo/PATO_0001024','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002104'],
         type=np.dtype(
             np.float64),
