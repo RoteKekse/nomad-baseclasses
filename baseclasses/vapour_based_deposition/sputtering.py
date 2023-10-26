@@ -70,7 +70,11 @@ class SputteringProcess(ArchiveSection):
                 ])))
 
     thickness = Quantity(
+<<<<<<< HEAD
         #Link to ontology class 'thickness'
+=======
+        #Link to class 'thickness'
+>>>>>>> 26fa046 (added links to vapour based -> sputtering)
         links = ['http://purl.obolibrary.org/obo/PATO_0000915'],
         type=np.dtype(
             np.float64),
@@ -82,7 +86,11 @@ class SputteringProcess(ArchiveSection):
                 minValue=0)))
 
     pressure = Quantity(
+<<<<<<< HEAD
         #Link to ontology class 'pressure', Link to ontology class 'pressure setting datum'
+=======
+        #Link to class 'pressure', Link to class 'pressure setting datum'
+>>>>>>> 26fa046 (added links to vapour based -> sputtering)
         links = ['http://purl.obolibrary.org/obo/PATO_0001025','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005040'],
         type=np.dtype(
             np.float64),
@@ -106,15 +114,25 @@ class SputteringProcess(ArchiveSection):
                 minValue=0)))
 
     temperature = Quantity(
+<<<<<<< HEAD
         #Link to ontology class 'temperature', Link to ontology class 'temperature setting datum'
         links = ['http://purl.obolibrary.org/obo/PATO_0000146','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002071'],
+=======
+        #Link to class 'process temperature', Link to class 'process temperature setting datum'
+        links = ['','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002071'],
+>>>>>>> 26fa046 (added links to vapour based -> sputtering)
         type=np.dtype(np.float64),
         unit=('°C'),
         a_eln=dict(component='NumberEditQuantity', defaultDisplayUnit='°C'))
 
     burn_in_time = Quantity(
+<<<<<<< HEAD
         #Link to ontology class 'time', Link to ontology class 'time setting datum' (missing class)
         links = ['http://purl.obolibrary.org/obo/PATO_0000165','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005085'],
+=======
+        #Link to class 'process time', Link to class 'process time setting datum'
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001063','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002072'],
+>>>>>>> 26fa046 (added links to vapour based -> sputtering)
         type=np.dtype(
             np.float64),
         unit=('s'),
@@ -125,8 +143,13 @@ class SputteringProcess(ArchiveSection):
                 minValue=0)))
 
     deposition_time = Quantity(
+<<<<<<< HEAD
         #Link to ontology class 'time', Link to ontology class 'time setting datum'
         links = ['http://purl.obolibrary.org/obo/PATO_0000165','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005085'],
+=======
+        #Link to class 'process time', Link to class 'process time setting datum'
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001063','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002072'],
+>>>>>>> 26fa046 (added links to vapour based -> sputtering)
         type=np.dtype(
             np.float64),
         unit=('s'),
@@ -137,7 +160,11 @@ class SputteringProcess(ArchiveSection):
                 minValue=0)))
 
     power = Quantity(
+<<<<<<< HEAD
         #Link to ontology class 'power', Link to ontology class 'power setting datum'
+=======
+        #Link to class 'power', Link to class 'power setting datum'
+>>>>>>> 26fa046 (added links to vapour based -> sputtering)
         links = ['http://purl.obolibrary.org/obo/PATO_0001024','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002104'],
         type=np.dtype(
             np.float64),
@@ -155,7 +182,11 @@ class SputteringProcess(ArchiveSection):
             defaultDisplayUnit='V'))
 
     gas_flow_rate = Quantity(
+<<<<<<< HEAD
         #Link to ontology class 'gas flow rate', Link to ontology class 'gas flow rate setting datum'
+=======
+        #Link to class 'gas flow rate', Link to class 'gas flow rate setting datum'
+>>>>>>> 26fa046 (added links to vapour based -> sputtering)
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002114','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002108'],
         type=np.dtype(
             np.float64),
@@ -169,7 +200,11 @@ class Sputtering(LayerDeposition):
     '''Base class for evaporation of a sample'''
 
     m_def = Section(
+<<<<<<< HEAD
         #Link to ontology class 'sputter deposition'
+=======
+        #Link to class 'sputter deposition'
+>>>>>>> 26fa046 (added links to vapour based -> sputtering)
         links = ['http://purl.obolibrary.org/obo/CHMO_0001364'],
     )
 
