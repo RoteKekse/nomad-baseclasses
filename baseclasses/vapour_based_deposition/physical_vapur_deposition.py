@@ -49,6 +49,8 @@ class PVDProcess(ArchiveSection):
                 minValue=0)))
 
     pressure = Quantity(
+        #Link to class 'total pressure'
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001094'],
         type=np.dtype(
             np.float64),
         unit=('ubar'),
@@ -71,6 +73,8 @@ class PVDProcess(ArchiveSection):
                 minValue=0)))
 
     rotation_speed = Quantity(
+        #Link to class 'Rotation speed', Link to class 'rotation speed setting datum'
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002026','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002005'],
         type=np.dtype(np.float64),
         unit=('1/s'),
         a_eln=dict(component='NumberEditQuantity', defaultDisplayUnit='1/s'))
