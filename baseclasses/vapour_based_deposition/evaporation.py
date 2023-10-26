@@ -145,8 +145,8 @@ class Evaporation(ArchiveSection):
                 minValue=0)))
 
     pressure = Quantity(
-        #Link to class 'total pressure'
-        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001094'],
+        #Link to class 'pressure'
+        links = ['http://purl.obolibrary.org/obo/PATO_0001025','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005040'],
         type=np.dtype(
             np.float64),
         unit=('mbar'),
@@ -157,6 +157,8 @@ class Evaporation(ArchiveSection):
                 minValue=0)))
 
     start_rate = Quantity(
+        #Link to class 'rate'
+        links = ['http://purl.obolibrary.org/obo/PATO_0000161'],
         type=np.dtype(
             np.float64),
         unit=('angstrom/s'),
@@ -165,6 +167,8 @@ class Evaporation(ArchiveSection):
             defaultDisplayUnit='angstrom/s', props=dict(minValue=0)))
 
     target_rate = Quantity(
+        #Link to class 'rate'
+        links = ['http://purl.obolibrary.org/obo/PATO_0000161'],
         type=np.dtype(
             np.float64),
         unit=('angstrom/s'),
