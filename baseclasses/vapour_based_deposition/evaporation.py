@@ -94,7 +94,7 @@ class EvaporationSources(ArchiveSection):
     #     diff = self.mass_after_weighing - self.mass_before_weighing
 
 
-class PerovsciteEvaporation(ArchiveSection):
+class PerovskiteEvaporation(ArchiveSection):
     evaporation_sources = SubSection(
         section_def=EvaporationSources, repeats=True)
 
@@ -145,7 +145,7 @@ class Evaporation(ArchiveSection):
                 minValue=0)))
 
     pressure = Quantity(
-        #Link to class 'pressure'
+        #Link to class 'pressure', Link to class 'pressure setting datum'
         links = ['http://purl.obolibrary.org/obo/PATO_0001025','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005040'],
         type=np.dtype(
             np.float64),
@@ -243,7 +243,7 @@ class Evaporations(LayerDeposition):
     inorganic_evaporation = SubSection(
         section_def=InorganicEvaporation, repeats=True)
 
-    perovscite_evaporation = SubSection(
+    perovskite_evaporation = SubSection(
         section_def=InorganicEvaporation, repeats=True)
 
     def normalize(self, archive, logger):
