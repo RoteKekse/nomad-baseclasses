@@ -41,7 +41,11 @@ class LogData(ArchiveSection):
     name = Quantity(type=str)
 
     power_mean = Quantity(
+<<<<<<< HEAD
         #Link to ontology class 'power'
+=======
+        #Link to class 'power',
+>>>>>>> cd7fa1c (Added links to pevcd, fixed spelling error perovscite)
         links = ['http://purl.obolibrary.org/obo/PATO_0001024'],
         type=np.dtype(
             np.float64),
@@ -65,7 +69,11 @@ class LogData(ArchiveSection):
                 minValue=0)))
 
     pressure_mean = Quantity(
+<<<<<<< HEAD
         #Link to ontology class 'pressure'
+=======
+        #Link to class 'pressure'
+>>>>>>> cd7fa1c (Added links to pevcd, fixed spelling error perovscite)
         links = ['http://purl.obolibrary.org/obo/PATO_0001025'],
         type=np.dtype(
             np.float64),
@@ -89,7 +97,11 @@ class LogData(ArchiveSection):
                 minValue=0)))
 
     temperature_mean = Quantity(
+<<<<<<< HEAD
         #Link to ontology class 'temperature'
+=======
+        #Link to class 'temperature'
+>>>>>>> cd7fa1c (Added links to pevcd, fixed spelling error perovscite)
         links = ['http://purl.obolibrary.org/obo/PATO_0000146'],
         type=np.dtype(np.float64),
         unit=('°C'),
@@ -103,7 +115,11 @@ class LogData(ArchiveSection):
         a_eln=dict(component='NumberEditQuantity', defaultDisplayUnit='°C'))
 
     power = Quantity(
+<<<<<<< HEAD
         #Link to ontology class 'power', Link to ontology class 'power setting datum'
+=======
+        #Link to class 'power', Link to class 'power setting datum'
+>>>>>>> cd7fa1c (Added links to pevcd, fixed spelling error perovscite)
         links = ['http://purl.obolibrary.org/obo/PATO_0001024','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002104'],
         type=np.dtype(
             np.float64),
@@ -121,7 +137,11 @@ class LogData(ArchiveSection):
             }])
 
     pressure = Quantity(
+<<<<<<< HEAD
         #Link to ontology class 'pressure', Link to ontology class 'pressure setting datum'
+=======
+        #Link to class 'pressure', Link to class 'pressure setting datum'
+>>>>>>> cd7fa1c (Added links to pevcd, fixed spelling error perovscite)
         links = ['http://purl.obolibrary.org/obo/PATO_0001025','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005040'],
         type=np.dtype(
             np.float64),
@@ -139,16 +159,26 @@ class LogData(ArchiveSection):
             }])
 
     time = Quantity(
+<<<<<<< HEAD
         #Link to ontology class 'time', Link to ontology class 'time setting datum'
         links = ['http://purl.obolibrary.org/obo/PATO_0000165','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005085'],
+=======
+        #Link to class 'process time', Link to class 'process time setting datum'
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001063','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002072'],
+>>>>>>> cd7fa1c (Added links to pevcd, fixed spelling error perovscite)
         type=np.dtype(
             np.float64),
         shape=['*'],
         unit=('s'))
 
     temperature = Quantity(
+<<<<<<< HEAD
         #Link to ontology class 'temperature', Link to ontology class 'temperature setting datum'
         links = ['http://purl.obolibrary.org/obo/PATO_0000146','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002071'],
+=======
+        #Link to class 'process temperature', Link to class 'process temperature setting datum'
+        links = ['','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002071'],
+>>>>>>> cd7fa1c (Added links to pevcd, fixed spelling error perovscite)
         type=np.dtype(np.float64),
         shape=['*'],
         unit=('°C'),
@@ -178,7 +208,11 @@ class GasFlow(ArchiveSection):
         a_eln=dict(component='StringEditQuantity'))
 
     gas_flow_rate = Quantity(
+<<<<<<< HEAD
         #Link to ontology class 'gas flow rate', Link to ontology class 'gas flow rate setting datum'
+=======
+        #Link to class 'gas flow rate', Link to class 'gas flow rate setting datum'
+>>>>>>> cd7fa1c (Added links to pevcd, fixed spelling error perovscite)
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002114','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002108'],
         type=np.dtype(
             np.float64),
@@ -200,7 +234,11 @@ class GasFlow(ArchiveSection):
 class PECVDProcess(ArchiveSection):
 
     power = Quantity(
+<<<<<<< HEAD
         #Link to ontology class 'power', Link to ontology class 'power setting datum'
+=======
+        #Link to class 'power', Link to class 'power setting datum'
+>>>>>>> cd7fa1c (Added links to pevcd, fixed spelling error perovscite)
         links = ['http://purl.obolibrary.org/obo/PATO_0001024','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002104'],
         type=np.dtype(
             np.float64),
@@ -212,7 +250,11 @@ class PECVDProcess(ArchiveSection):
                 minValue=0)))
 
     pressure = Quantity(
+<<<<<<< HEAD
         #Link to ontology class 'pressure', Link to ontology class 'pressure setting datum'
+=======
+        #Link to class 'pressure', Link to class 'pressure setting datum'
+>>>>>>> cd7fa1c (Added links to pevcd, fixed spelling error perovscite)
         links = ['http://purl.obolibrary.org/obo/PATO_0001025','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005040'],
         type=np.dtype(
             np.float64),
@@ -224,8 +266,13 @@ class PECVDProcess(ArchiveSection):
                 minValue=0)))
 
     time = Quantity(
+<<<<<<< HEAD
         #Link to ontology class 'time', Link to ontology class 'time setting datum'
         links = ['http://purl.obolibrary.org/obo/PATO_0000165','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005085'],
+=======
+        #Link to class 'process time', Link to class 'process time setting datum'
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001063','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002072'],
+>>>>>>> cd7fa1c (Added links to pevcd, fixed spelling error perovscite)
         type=np.dtype(
             np.float64),
         unit=('s'),
@@ -236,14 +283,23 @@ class PECVDProcess(ArchiveSection):
                 minValue=0)))
 
     temperature = Quantity(
+<<<<<<< HEAD
         #Link to ontology class 'temperature', Link to ontology class 'temperature setting datum'
         links = ['http://purl.obolibrary.org/obo/PATO_0000146','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002071'],
+=======
+        #Link to class 'process temperature', Link to class 'process temperature setting datum'
+        links = ['','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002071'],
+>>>>>>> cd7fa1c (Added links to pevcd, fixed spelling error perovscite)
         type=np.dtype(np.float64),
         unit=('°C'),
         a_eln=dict(component='NumberEditQuantity', defaultDisplayUnit='°C'))
 
     plate_spacing = Quantity(
+<<<<<<< HEAD
         #Link to ontology class 'plate spacing'
+=======
+        #Link to class 'plate spacing'
+>>>>>>> cd7fa1c (Added links to pevcd, fixed spelling error perovscite)
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002004'],
         type=np.dtype(
             np.float64), unit=('mm'), a_eln=dict(

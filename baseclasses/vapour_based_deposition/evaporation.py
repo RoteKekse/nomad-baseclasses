@@ -188,12 +188,17 @@ class Evaporation(ArchiveSection):
 
     pressure = Quantity(
 <<<<<<< HEAD
+<<<<<<< HEAD
         #Link to ontology class 'pressure', Link to ontology class 'pressure setting datum'
         links = ['http://purl.obolibrary.org/obo/PATO_0001025','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005040'],
 =======
         #Link to class 'total pressure'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001094'],
 >>>>>>> 1a08f68 (Added further links to vapour based deposition (evaporation; pvd))
+=======
+        #Link to class 'pressure'
+        links = ['http://purl.obolibrary.org/obo/PATO_0001025','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005040'],
+>>>>>>> cd7fa1c (Added links to pevcd, fixed spelling error perovscite)
         type=np.dtype(
             np.float64),
         unit=('mbar'),
@@ -204,7 +209,11 @@ class Evaporation(ArchiveSection):
                 minValue=0)))
 
     start_rate = Quantity(
+<<<<<<< HEAD
         #Link to ontology class 'rate'
+=======
+        #Link to class 'rate'
+>>>>>>> cd7fa1c (Added links to pevcd, fixed spelling error perovscite)
         links = ['http://purl.obolibrary.org/obo/PATO_0000161'],
         type=np.dtype(
             np.float64),
@@ -214,7 +223,11 @@ class Evaporation(ArchiveSection):
             defaultDisplayUnit='angstrom/s', props=dict(minValue=0)))
 
     target_rate = Quantity(
+<<<<<<< HEAD
         #Link to ontology class 'rate'
+=======
+        #Link to class 'rate'
+>>>>>>> cd7fa1c (Added links to pevcd, fixed spelling error perovscite)
         links = ['http://purl.obolibrary.org/obo/PATO_0000161'],
         type=np.dtype(
             np.float64),
