@@ -28,13 +28,13 @@ from ..chemical import Chemical
 
 class EvaporationSources(ArchiveSection):
     chemical = Quantity(
-        #Link to class 'chemical substance'
+        #Link to ontology class 'chemical substance'
         links = ['http://purl.obolibrary.org/obo/CHEBI_59999'],
         type=Reference(Chemical.m_def),
         a_eln=dict(component='ReferenceEditQuantity'))
 
     chemical_2 = SubSection(
-        #Link to class 'chemical substance'
+        #Link to ontology class 'chemical substance'
         links = ['http://purl.obolibrary.org/obo/CHEBI_59999'],
         section_def=PubChemPureSubstanceSection)
 
@@ -53,7 +53,7 @@ class EvaporationSources(ArchiveSection):
         a_eln=dict(component='NumberEditQuantity'))
 
     mass_before_weighing = Quantity(
-        #Link to class 'mass'
+        #Link to ontology class 'mass'
         links = ['http://purl.obolibrary.org/obo/PATO_0000125'],
         type=np.dtype(
             np.float64),
@@ -65,7 +65,7 @@ class EvaporationSources(ArchiveSection):
                 minValue=0)))
 
     mass_after_weighing = Quantity(
-        #Link to class 'mass'
+        #Link to ontology class 'mass'
         links = ['http://purl.obolibrary.org/obo/PATO_0000125'],
         type=np.dtype(
             np.float64),
@@ -77,7 +77,7 @@ class EvaporationSources(ArchiveSection):
                 minValue=0)))
 
     mass_after_processing = Quantity(
-        #Link to class 'mass'
+        #Link to ontology class 'mass'
         links = ['http://purl.obolibrary.org/obo/PATO_0000125'],
         type=np.dtype(
             np.float64), unit=('g'), a_eln=dict(
@@ -94,14 +94,14 @@ class EvaporationSources(ArchiveSection):
     #     diff = self.mass_after_weighing - self.mass_before_weighing
 
 
-class PerovskiteEvaporation(ArchiveSection):
+class PerovsciteEvaporation(ArchiveSection):
     evaporation_sources = SubSection(
         section_def=EvaporationSources, repeats=True)
 
 
 class Evaporation(ArchiveSection):
     m_def = Section(label_quantity='name'
-                    #Link to class 'evporation'
+                    #Link to ontology class 'evporation'
                     #links = [class doesnt exist],
                     )
     name = Quantity(
@@ -109,13 +109,13 @@ class Evaporation(ArchiveSection):
     )
 
     chemical = Quantity(
-        #Link to class 'chemical substance'
+        #Link to ontology class 'chemical substance'
         links = ['http://purl.obolibrary.org/obo/CHEBI_59999'],
         type=Reference(Chemical.m_def),
         a_eln=dict(component='ReferenceEditQuantity'))
 
     chemical_2 = SubSection(
-        #Link to class 'chemical substance'
+        #Link to ontology class 'chemical substance'
         links = ['http://purl.obolibrary.org/obo/CHEBI_59999'],
         section_def=PubChemPureSubstanceSection)
 
@@ -133,7 +133,7 @@ class Evaporation(ArchiveSection):
                     'ULTE2'])))
 
     thickness = Quantity(
-        #Link to class 'thickness'
+        #Link to ontology class 'thickness'
         links = ['http://purl.obolibrary.org/obo/PATO_0000915'],
         type=np.dtype(
             np.float64),
@@ -145,7 +145,7 @@ class Evaporation(ArchiveSection):
                 minValue=0)))
 
     pressure = Quantity(
-        #Link to class 'pressure', Link to class 'pressure setting datum'
+        #Link to ontology class 'pressure', Link to ontology class 'pressure setting datum'
         links = ['http://purl.obolibrary.org/obo/PATO_0001025','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005040'],
         type=np.dtype(
             np.float64),
@@ -157,7 +157,7 @@ class Evaporation(ArchiveSection):
                 minValue=0)))
 
     start_rate = Quantity(
-        #Link to class 'rate'
+        #Link to ontology class 'rate'
         links = ['http://purl.obolibrary.org/obo/PATO_0000161'],
         type=np.dtype(
             np.float64),
@@ -167,7 +167,7 @@ class Evaporation(ArchiveSection):
             defaultDisplayUnit='angstrom/s', props=dict(minValue=0)))
 
     target_rate = Quantity(
-        #Link to class 'rate'
+        #Link to ontology class 'rate'
         links = ['http://purl.obolibrary.org/obo/PATO_0000161'],
         type=np.dtype(
             np.float64),
@@ -177,7 +177,7 @@ class Evaporation(ArchiveSection):
             defaultDisplayUnit='angstrom/s', props=dict(minValue=0)))
 
     time = Quantity(
-        #Link to class 'process time', Link to class 'process time setting datum'
+        #Link to ontology class 'process time', Link to ontology class 'process time setting datum'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001063','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002072'],
         type=np.dtype(
             np.float64),
@@ -207,7 +207,7 @@ class Evaporation(ArchiveSection):
 
 class OrganicEvaporation(Evaporation):
     temparature = Quantity(
-        #Link to class 'process temperature', Link to class 'process temperature setting datum'
+        #Link to ontology class 'process temperature', Link to ontology class 'process temperature setting datum'
         links = ['','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002071'],
         type=np.dtype(
             np.float64),
@@ -221,7 +221,7 @@ class OrganicEvaporation(Evaporation):
 
 class InorganicEvaporation(Evaporation):
     power = Quantity(
-        #Link to class 'power', Link to class 'power setting datum'
+        #Link to ontology class 'power', Link to ontology class 'power setting datum'
         links = ['http://purl.obolibrary.org/obo/PATO_0001024','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002104'],
         type=np.dtype(
             np.float64),
@@ -243,7 +243,7 @@ class Evaporations(LayerDeposition):
     inorganic_evaporation = SubSection(
         section_def=InorganicEvaporation, repeats=True)
 
-    perovskite_evaporation = SubSection(
+    perovscite_evaporation = SubSection(
         section_def=InorganicEvaporation, repeats=True)
 
     def normalize(self, archive, logger):

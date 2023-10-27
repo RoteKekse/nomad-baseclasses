@@ -37,7 +37,7 @@ class PVDProcess(ArchiveSection):
         section_def=PubChemPureSubstanceSection, repeats=True)
 
     power = Quantity(
-        #Link to class 'power', Link to class 'power setting datum'
+        #Link to ontology class 'power', Link to ontology class 'power setting datum'
         links = ['http://purl.obolibrary.org/obo/PATO_0001024','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002104'],
         type=np.dtype(
             np.float64),
@@ -49,7 +49,7 @@ class PVDProcess(ArchiveSection):
                 minValue=0)))
 
     pressure = Quantity(
-        #Link to class 'total pressure'
+        #Link to ontology class 'total pressure'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001094'],
         type=np.dtype(
             np.float64),
@@ -61,7 +61,7 @@ class PVDProcess(ArchiveSection):
                 minValue=0)))
 
     time = Quantity(
-        #Link to class 'process time', Link to class 'process time setting datum'
+        #Link to ontology class 'process time', Link to ontology class 'process time setting datum'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001063','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002072'],
         type=np.dtype(
             np.float64),
@@ -73,14 +73,14 @@ class PVDProcess(ArchiveSection):
                 minValue=0)))
 
     rotation_speed = Quantity(
-        #Link to class 'Rotation speed', Link to class 'rotation speed setting datum'
+        #Link to ontology class 'Rotation speed', Link to ontology class 'rotation speed setting datum'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002026','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002005'],
         type=np.dtype(np.float64),
         unit=('1/s'),
         a_eln=dict(component='NumberEditQuantity', defaultDisplayUnit='1/s'))
 
     temperature = Quantity(
-        #Link to class 'substrate temperature', Link to class 'substrate temperature setting datum'
+        #Link to ontology class 'substrate temperature', Link to ontology class 'substrate temperature setting datum'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00009996','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00009995'],
         type=np.dtype(np.float64),
         unit=('°C'),
@@ -98,7 +98,7 @@ class PVDProcess(ArchiveSection):
 class PVDeposition(LayerDeposition):
     '''Base class for evaporation of a sample'''
     m_def = Section(
-        #Link to class 'physical vapour deposition'
+        #Link to ontology class 'physical vapour deposition'
         links = ['http://purl.obolibrary.org/obo/CHMO_0001356'],
     )
 

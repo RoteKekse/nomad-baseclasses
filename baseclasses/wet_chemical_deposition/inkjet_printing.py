@@ -38,6 +38,8 @@ class PrintHeadPath(ArchiveSection):
 
 
 class LP50NozzleVoltageProfile(NozzleVoltageProfile):
+    #Add nozzle profile
+    m_def
     voltage_a = Quantity(
         type=np.dtype(
             np.float64), unit=('V'), a_eln=dict(
@@ -119,7 +121,7 @@ class LP50NozzleVoltageProfile(NozzleVoltageProfile):
 
 class LP50PrintHeadPath(PrintHeadPath):
     quality_factor = Quantity(
-        #Link to class 'print head path', Link to class 'print head position setting datum'
+        #Link to ontology class 'print head path', Link to ontology class 'print head position setting datum'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005084', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005090'],
         type=MEnum(
             'QF1',
@@ -144,7 +146,7 @@ class LP50PrintHeadPath(PrintHeadPath):
         ))
 
     directional = Quantity(
-        #Link to class 'printing direction'
+        #Link to ontology class 'printing direction'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005077'],
         type=MEnum('uni-directional', 'bi-directional',
                    'uni-directional reverse'),
@@ -173,7 +175,7 @@ class LP50PrintHeadPath(PrintHeadPath):
 
 class PrintHeadProperties(ArchiveSection):
     print_speed = Quantity(
-        #Link to class 'print speed', Link to class 'print speed setting datum'
+        #Link to ontology class 'print speed', Link to ontology class 'print speed setting datum'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005074', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#print_speed_setting_datum'],
         type=np.dtype(
             np.float64),
@@ -185,7 +187,7 @@ class PrintHeadProperties(ArchiveSection):
                 minValue=1, maxValue=400)))
 
     print_head_angle = Quantity(
-        #Link to class 'print head angle', Link to class 'printing head angle setting datum'    
+        #Link to ontology class 'print head angle', Link to ontology class 'printing head angle setting datum'    
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005079', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#print_head_angle_setting_datum'],
         type=np.dtype(
             np.float64),
@@ -197,7 +199,7 @@ class PrintHeadProperties(ArchiveSection):
                 minValue=0)))
 
     print_head_temperature = Quantity(
-        #Link to class 'print head temperature', Link to class 'print head temperature setting datum'
+        #Link to ontology class 'print head temperature', Link to ontology class 'print head temperature setting datum'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005070', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#print_head_temperature_setting_datum'],
         type=np.dtype(
             np.float64), unit=('°C'), a_eln=dict(
@@ -205,7 +207,7 @@ class PrintHeadProperties(ArchiveSection):
                 minValue=20, maxValue=120)))
 
     print_head_distance_to_substrate = Quantity(
-        #Link to class 'print head distance to substrate', Link to class 'print head distance to substrate setting datum'
+        #Link to ontology class 'print head distance to substrate', Link to ontology class 'print head distance to substrate setting datum'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005078', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#print_head_distance_to_substrate_setting_datum'],
         type=np.dtype(
             np.float64), unit=('mm'), a_eln=dict(
@@ -213,28 +215,28 @@ class PrintHeadProperties(ArchiveSection):
                 minValue=-27, maxValue=35)))
 
     print_head_width = Quantity(
-        #Link to class 'print head width', Link to class 'print head width setting datum'
+        #Link to ontology class 'print head width', Link to ontology class 'print head width setting datum'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005066', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#print_head_width_setting_datum'],
         type=np.dtype(
             np.float64), unit=('mm'), a_eln=dict(
             component='NumberEditQuantity', defaultDisplayUnit='mm'))
 
     print_nozzle_distance = Quantity(
-        #Link to class 'print nozzle distance', Link to class 'print nozzle distance setting datum'
+        #Link to ontology class 'print nozzle distance', Link to ontology class 'print nozzle distance setting datum'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005072', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#print_nozzle_distance_setting_datum'],
         type=np.dtype(
             np.float64), unit=('mm'), a_eln=dict(
             component='NumberEditQuantity', defaultDisplayUnit='mm'))
 
     print_nozzle_width = Quantity(
-        #Link to class 'print nozzle width', Link to class 'print nozzle width setting datum'
+        #Link to ontology class 'print nozzle width', Link to ontology class 'print nozzle width setting datum'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005067', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005095'],
         type=np.dtype(
             np.float64), unit=('um'), a_eln=dict(
             component='NumberEditQuantity', defaultDisplayUnit='um'))
 
     print_nozzle_drop_volume = Quantity(
-        #Link to class 'print nozzle drop volume', Link to class 'print nozzle drop volume setting datum'
+        #Link to ontology class 'print nozzle drop volume', Link to ontology class 'print nozzle drop volume setting datum'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005080', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005096'],
         type=np.dtype(
             np.float64), unit=('pl'), a_eln=dict(
@@ -246,7 +248,7 @@ class InkjetPrintingProperties(ArchiveSection):
     # m_def = Section(label_quantity='name')
 
     resolution_x = Quantity(
-        #Link to class 'printing resolution x'
+        #Link to ontology class 'printing resolution x'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005076'],
         type=np.dtype(
             np.float64),
@@ -258,7 +260,7 @@ class InkjetPrintingProperties(ArchiveSection):
                 minValue=0)))
 
     resolution_y = Quantity(
-        #Link to class 'printing resolution y'
+        #Link to ontology class 'printing resolution y'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005081'],
         type=np.dtype(
             np.float64),
@@ -270,7 +272,7 @@ class InkjetPrintingProperties(ArchiveSection):
                 minValue=0)))
 
     substrate_height = Quantity(
-        #Link to class 'substrate height'
+        #Link to ontology class 'substrate height'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005073'],
         type=np.dtype(
             np.float64), unit=('mm'), a_eln=dict(
@@ -278,7 +280,7 @@ class InkjetPrintingProperties(ArchiveSection):
                 minValue=0, maxValue=35)))
 
     substrate_temperature = Quantity(
-        #Link to class 'substrate temperature', Link to class 'substrate temperature setting datum'
+        #Link to ontology class 'substrate temperature', Link to ontology class 'substrate temperature setting datum'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00009996', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00009995'],
         type=np.dtype(
             np.float64), unit=('°C'), a_eln=dict(
@@ -286,7 +288,7 @@ class InkjetPrintingProperties(ArchiveSection):
                 minValue=20, maxValue=60)))
 
     cartridge_pressure = Quantity(
-        #Link to class 'cartridge pressure', Link to class 'cartridge pressure setting datum'
+        #Link to ontology class 'cartridge pressure', Link to ontology class 'cartridge pressure setting datum'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005069', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#cartridge_pressure_setting_datum'],
         type=np.dtype(
             np.float64), unit=('mbar'), a_eln=dict(
@@ -294,7 +296,7 @@ class InkjetPrintingProperties(ArchiveSection):
                 minValue=0, maxValue=38)))
 
     cartridge_temperature = Quantity(
-        #Link to class 'cartridge temperature', Link to class 'cartridge temperature setting datum'
+        #Link to ontology class 'cartridge temperature', Link to ontology class 'cartridge temperature setting datum'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005071', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#cartridge_temperature_setting_datum'],
         type=np.dtype(
             np.float64), unit=('°C'), a_eln=dict(
@@ -327,7 +329,7 @@ class LP50InkjetPrintingProperties(InkjetPrintingProperties):
 class LP50InkjetPrinting(WetChemicalDeposition):
     '''Base class for inkjet printing of a layer on a sample'''
     m_def = Section(
-        #Link to class 'ink jet printing'
+        #Link to ontology class 'ink jet printing'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002053'],
     )
 
@@ -337,7 +339,7 @@ class LP50InkjetPrinting(WetChemicalDeposition):
         a_browser=dict(adaptor='RawFileAdaptor'))
 
     print_head_used = Quantity(
-        #Link to class 'print head', Link to relation 'has participant'
+        #Link to ontology class 'print head', Link to relation 'has participant'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005064','http://purl.obolibrary.org/obo/RO_0000057'],
         type=str,
         a_eln=dict(component='FileEditQuantity'),
@@ -347,12 +349,12 @@ class LP50InkjetPrinting(WetChemicalDeposition):
         section_def=LP50InkjetPrintingProperties)
 
     print_head_path = SubSection(
-        #Link to class 'print head path', Link to relation 'has_specified_input'
+        #Link to ontology class 'print head path', Link to relation 'has_specified_input'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005084','http://purl.obolibrary.org/obo/OBI_0000293'],
         section_def=LP50PrintHeadPath)
 
     nozzle_voltage_profile = SubSection(
-        #Link to class 'print nozzle voltage profile', Link to relation 'has_specified_input'
+        #Link to ontology class 'print nozzle voltage profile', Link to relation 'has_specified_input'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005083','http://purl.obolibrary.org/obo/OBI_0000293'],
         section_def=LP50NozzleVoltageProfile)
 
