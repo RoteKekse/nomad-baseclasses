@@ -32,6 +32,7 @@ class VaporizationProperties(ArchiveSection):
     temperature = Quantity(
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         #Link to ontology class 'temperature', Link to ontology class 'temperature setting datum'
         links = ['http://purl.obolibrary.org/obo/PATO_0000146', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002111'],
 =======
@@ -42,6 +43,9 @@ class VaporizationProperties(ArchiveSection):
 >>>>>>> 93909fc (Added links in files dip coating, vaporization and dropcasting, dropcasting)
 =======
         #Link to class 'temperature', Link to class 'temperature setting datum'
+=======
+        #Link to ontology class 'temperature', Link to ontology class 'temperature setting datum'
+>>>>>>> 8794d04 (Updated 'Link to class' to 'Link to ontology class')
         links = ['http://purl.obolibrary.org/obo/PATO_0000146', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002111'],
 >>>>>>> 1916ad1 (Fixed double links)
         type=np.dtype(np.float64),
@@ -50,10 +54,14 @@ class VaporizationProperties(ArchiveSection):
 
     initial_time = Quantity(
 <<<<<<< HEAD
+<<<<<<< HEAD
         #Link to ontology class 'time', Link to ontology class 'time setting datum'
         links = ['http://purl.obolibrary.org/obo/PATO_0000165', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005085'],
 =======
         #Link to class 'time'
+=======
+        #Link to ontology class 'time'
+>>>>>>> 8794d04 (Updated 'Link to class' to 'Link to ontology class')
         links = ['http://purl.obolibrary.org/obo/PATO_0000165'],
 >>>>>>> 93909fc (Added links in files dip coating, vaporization and dropcasting, dropcasting)
         type=Datetime,
@@ -64,10 +72,14 @@ class VaporizationAndDropCasting(WetChemicalDeposition):
     '''Base class for spin coating of a sample'''
     m_def = Section(
 <<<<<<< HEAD
+<<<<<<< HEAD
         #Link to ontology class 'Drop casting'
 =======
         #Link to class 'Drop casting'
 >>>>>>> 30bb487 (Added link to drop casting in vaporization and dropcasting file)
+=======
+        #Link to ontology class 'Drop casting'
+>>>>>>> 8794d04 (Updated 'Link to class' to 'Link to ontology class')
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002059'],
 
     )

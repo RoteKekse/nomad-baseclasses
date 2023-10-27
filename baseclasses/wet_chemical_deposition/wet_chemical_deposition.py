@@ -35,6 +35,9 @@ class PrecursorSolution(ArchiveSection):
 
     m_def = Section(label_quantity='name',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8794d04 (Updated 'Link to class' to 'Link to ontology class')
                     #Link to ontology class 'precursor solution'
                     links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001081'],
 =======
@@ -56,15 +59,20 @@ class PrecursorSolution(ArchiveSection):
 
     solution = Quantity(
 <<<<<<< HEAD
+<<<<<<< HEAD
         #Link to ontology class 'Solution'
 =======
         #Link to class 'Solution'
 >>>>>>> 2bfcffa (First Commit, added links in files annealing, quenching, sintering, wet chemical depo, dip coating, spin coating, spray pyrolysis, slot die coating)
+=======
+        #Link to ontology class 'Solution'
+>>>>>>> 8794d04 (Updated 'Link to class' to 'Link to ontology class')
         links = ['http://purl.obolibrary.org/obo/CHEBI_75958'],
         type=Reference(Solution.m_def),
         a_eln=dict(component='ReferenceEditQuantity', label="Solution Reference"))
 
     solution_volume = Quantity(
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         #Link to ontology class 'volume setting datum', Link to ontology class 'volume'
@@ -77,6 +85,9 @@ class PrecursorSolution(ArchiveSection):
 >>>>>>> 2bfcffa (First Commit, added links in files annealing, quenching, sintering, wet chemical depo, dip coating, spin coating, spray pyrolysis, slot die coating)
 =======
         #Link to class 'volume setting datum', Link to class 'volume'
+=======
+        #Link to ontology class 'volume setting datum', Link to ontology class 'volume'
+>>>>>>> 8794d04 (Updated 'Link to class' to 'Link to ontology class')
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002158', 'http://purl.obolibrary.org/obo/PATO_0000918'],
 >>>>>>> 1916ad1 (Fixed double links)
         type=np.dtype(
@@ -133,6 +144,7 @@ class WetChemicalDeposition(LayerDeposition):
     m_def = Section(
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         #Link to ontology class 'wet chemical deposition'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002051'],
     )
@@ -144,6 +156,9 @@ class WetChemicalDeposition(LayerDeposition):
 >>>>>>> 2bfcffa (First Commit, added links in files annealing, quenching, sintering, wet chemical depo, dip coating, spin coating, spray pyrolysis, slot die coating)
 =======
         #Link to class 'wet chemical deposition'
+=======
+        #Link to ontology class 'wet chemical deposition'
+>>>>>>> 8794d04 (Updated 'Link to class' to 'Link to ontology class')
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002051'],
     )
     

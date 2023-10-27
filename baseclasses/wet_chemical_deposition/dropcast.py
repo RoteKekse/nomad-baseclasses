@@ -34,6 +34,7 @@ class DropCastingProperties(ArchiveSection):
     dropcast_amount = Quantity(
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         #Link to ontology class 'volume', Link to ontology class 'volume setting datum'
         links = ['http://purl.obolibrary.org/obo/PATO_0000918', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002158'],
 =======
@@ -44,6 +45,9 @@ class DropCastingProperties(ArchiveSection):
 >>>>>>> 93909fc (Added links in files dip coating, vaporization and dropcasting, dropcasting)
 =======
         #Link to class 'volume', Link to class 'volume setting datum'
+=======
+        #Link to ontology class 'volume', Link to ontology class 'volume setting datum'
+>>>>>>> 8794d04 (Updated 'Link to class' to 'Link to ontology class')
         links = ['http://purl.obolibrary.org/obo/PATO_0000918', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002158'],
 >>>>>>> 1916ad1 (Fixed double links)
         type=np.dtype(
@@ -56,6 +60,7 @@ class DropCastingProperties(ArchiveSection):
     temperature = Quantity(
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         #Link to ontology class 'temperature', Link to ontology class 'temperature setting datum'
         links = ['http://purl.obolibrary.org/obo/PATO_0000146', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002111'],
 =======
@@ -66,6 +71,9 @@ class DropCastingProperties(ArchiveSection):
 >>>>>>> 93909fc (Added links in files dip coating, vaporization and dropcasting, dropcasting)
 =======
         #Link to class 'temperature', Link to class 'temperature setting datum'
+=======
+        #Link to ontology class 'temperature', Link to ontology class 'temperature setting datum'
+>>>>>>> 8794d04 (Updated 'Link to class' to 'Link to ontology class')
         links = ['http://purl.obolibrary.org/obo/PATO_0000146', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002111'],
 >>>>>>> 1916ad1 (Fixed double links)
         type=np.dtype(
@@ -77,10 +85,14 @@ class DropCastingProperties(ArchiveSection):
 
     atmosphere = Quantity(
 <<<<<<< HEAD
+<<<<<<< HEAD
         #Link to ontology class 'atmosphere'
 =======
         #Link to class 'atmosphere'
 >>>>>>> 93909fc (Added links in files dip coating, vaporization and dropcasting, dropcasting)
+=======
+        #Link to ontology class 'atmosphere'
+>>>>>>> 8794d04 (Updated 'Link to class' to 'Link to ontology class')
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001012'],
         type=str,
         a_eln=dict(
@@ -92,10 +104,14 @@ class DropCastingProperties(ArchiveSection):
 class DropCasting(WetChemicalDeposition):
     m_def = Section(
 <<<<<<< HEAD
+<<<<<<< HEAD
         #Link to ontology class 'Drop casting'
 =======
         #Link to class 'Drop casting'
 >>>>>>> 93909fc (Added links in files dip coating, vaporization and dropcasting, dropcasting)
+=======
+        #Link to ontology class 'Drop casting'
+>>>>>>> 8794d04 (Updated 'Link to class' to 'Link to ontology class')
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002059'],
     )
 

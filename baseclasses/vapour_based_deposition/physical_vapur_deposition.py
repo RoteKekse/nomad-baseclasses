@@ -42,10 +42,14 @@ class PVDProcess(ArchiveSection):
 
     power = Quantity(
 <<<<<<< HEAD
+<<<<<<< HEAD
         #Link to ontology class 'power', Link to ontology class 'power setting datum'
 =======
         #Link to class 'power', Link to class 'power setting datum'
 >>>>>>> 46c0756 (Started adding links to vapour based deposition)
+=======
+        #Link to ontology class 'power', Link to ontology class 'power setting datum'
+>>>>>>> 8794d04 (Updated 'Link to class' to 'Link to ontology class')
         links = ['http://purl.obolibrary.org/obo/PATO_0001024','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002104'],
         type=np.dtype(
             np.float64),
@@ -58,10 +62,14 @@ class PVDProcess(ArchiveSection):
 
     pressure = Quantity(
 <<<<<<< HEAD
+<<<<<<< HEAD
         #Link to ontology class 'pressure'
         links = ['http://purl.obolibrary.org/obo/PATO_0001025'],
 =======
         #Link to class 'total pressure'
+=======
+        #Link to ontology class 'total pressure'
+>>>>>>> 8794d04 (Updated 'Link to class' to 'Link to ontology class')
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001094'],
 >>>>>>> 1a08f68 (Added further links to vapour based deposition (evaporation; pvd))
         type=np.dtype(
@@ -75,10 +83,14 @@ class PVDProcess(ArchiveSection):
 
     time = Quantity(
 <<<<<<< HEAD
+<<<<<<< HEAD
         #Link to ontology class 'time', Link to ontology class 'time setting datum'
         links = ['http://purl.obolibrary.org/obo/PATO_0000165', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005085'],
 =======
         #Link to class 'process time', Link to class 'process time setting datum'
+=======
+        #Link to ontology class 'process time', Link to ontology class 'process time setting datum'
+>>>>>>> 8794d04 (Updated 'Link to class' to 'Link to ontology class')
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001063','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002072'],
 >>>>>>> 46c0756 (Started adding links to vapour based deposition)
         type=np.dtype(
@@ -92,10 +104,14 @@ class PVDProcess(ArchiveSection):
 
     rotation_speed = Quantity(
 <<<<<<< HEAD
+<<<<<<< HEAD
         #Link to ontology class 'Rotation speed', Link to ontology class 'rotation speed setting datum'
 =======
         #Link to class 'Rotation speed', Link to class 'rotation speed setting datum'
 >>>>>>> 1a08f68 (Added further links to vapour based deposition (evaporation; pvd))
+=======
+        #Link to ontology class 'Rotation speed', Link to ontology class 'rotation speed setting datum'
+>>>>>>> 8794d04 (Updated 'Link to class' to 'Link to ontology class')
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002026','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002005'],
         type=np.dtype(np.float64),
         unit=('1/s'),
@@ -103,10 +119,14 @@ class PVDProcess(ArchiveSection):
 
     temperature = Quantity(
 <<<<<<< HEAD
+<<<<<<< HEAD
         #Link to ontology class 'temperature', Link to ontology class 'temperature setting datum'
         links = ['http://purl.obolibrary.org/obo/PATO_0000146','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002111'],
 =======
         #Link to class 'substrate temperature', Link to class 'substrate temperature setting datum'
+=======
+        #Link to ontology class 'substrate temperature', Link to ontology class 'substrate temperature setting datum'
+>>>>>>> 8794d04 (Updated 'Link to class' to 'Link to ontology class')
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00009996','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00009995'],
 >>>>>>> 46c0756 (Started adding links to vapour based deposition)
         type=np.dtype(np.float64),
@@ -126,10 +146,14 @@ class PVDeposition(LayerDeposition):
     '''Base class for evaporation of a sample'''
     m_def = Section(
 <<<<<<< HEAD
+<<<<<<< HEAD
         #Link to ontology class 'physical vapour deposition'
 =======
         #Link to class 'physical vapour deposition'
 >>>>>>> 46c0756 (Started adding links to vapour based deposition)
+=======
+        #Link to ontology class 'physical vapour deposition'
+>>>>>>> 8794d04 (Updated 'Link to class' to 'Link to ontology class')
         links = ['http://purl.obolibrary.org/obo/CHMO_0001356'],
     )
 
