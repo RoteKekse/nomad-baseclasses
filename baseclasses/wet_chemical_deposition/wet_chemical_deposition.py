@@ -34,7 +34,7 @@ from baseclasses.helper.utilities import rewrite_json_recursively
 class PrecursorSolution(ArchiveSection):
 
     m_def = Section(label_quantity='name',
-                    #Link to class 'precursor solution'
+                    #Link to ontology class 'precursor solution'
                     links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001081'],
                     )
     name = Quantity(type=str)
@@ -46,13 +46,13 @@ class PrecursorSolution(ArchiveSection):
     )
 
     solution = Quantity(
-        #Link to class 'Solution'
+        #Link to ontology class 'Solution'
         links = ['http://purl.obolibrary.org/obo/CHEBI_75958'],
         type=Reference(Solution.m_def),
         a_eln=dict(component='ReferenceEditQuantity', label="Solution Reference"))
 
     solution_volume = Quantity(
-        #Link to class 'volume setting datum', Link to class 'volume'
+        #Link to ontology class 'volume setting datum', Link to ontology class 'volume'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002158', 'http://purl.obolibrary.org/obo/PATO_0000918'],
         type=np.dtype(
             np.float64),
@@ -106,7 +106,7 @@ def copy_solutions(sol):
 class WetChemicalDeposition(LayerDeposition):
     '''Wet Chemical Deposition'''
     m_def = Section(
-        #Link to class 'wet chemical deposition'
+        #Link to ontology class 'wet chemical deposition'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002051'],
     )
     

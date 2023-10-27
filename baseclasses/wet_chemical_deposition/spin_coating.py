@@ -37,7 +37,7 @@ class SpinCoatingRecipeSteps(ArchiveSection):
                     a_eln=dict(component='StringEditQuantity'))
 
     time = Quantity(
-        #Link to class 'process time', Link to class 'process time setting datum'
+        #Link to ontology class 'process time', Link to ontology class 'process time setting datum'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001063', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002072'],
         type=np.dtype(
             np.float64),
@@ -49,7 +49,7 @@ class SpinCoatingRecipeSteps(ArchiveSection):
                 minValue=0)))
 
     speed = Quantity(
-        #Link to class 'rotation speed', Link to class 'rotation speed setting datum'
+        #Link to ontology class 'rotation speed', Link to ontology class 'rotation speed setting datum'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002026', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002005'],
         type=np.dtype(
             np.float64),
@@ -61,7 +61,7 @@ class SpinCoatingRecipeSteps(ArchiveSection):
                 minValue=0)))
 
     acceleration = Quantity(
-        #Link to class 'rotation acceleration', Link to class 'rotation acceleration setting datum'
+        #Link to ontology class 'rotation acceleration', Link to ontology class 'rotation acceleration setting datum'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002049', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002002'],
         type=np.dtype(
             np.float64),
@@ -80,7 +80,7 @@ class SpinCoatingRecipe(Entity):
 class SpinCoating(WetChemicalDeposition):
     '''Base class for spin coating of a sample'''
     m_def = Section(
-        #Link to class 'spin coating'
+        #Link to ontology class 'spin coating'
         links = ['http://purl.obolibrary.org/obo/CHMO_0001472'],
     )
 

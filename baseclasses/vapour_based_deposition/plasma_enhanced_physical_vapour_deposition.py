@@ -41,7 +41,7 @@ class LogData(ArchiveSection):
     name = Quantity(type=str)
 
     power_mean = Quantity(
-        #Link to class 'power',
+        #Link to ontology class 'power',
         links = ['http://purl.obolibrary.org/obo/PATO_0001024'],
         type=np.dtype(
             np.float64),
@@ -63,7 +63,7 @@ class LogData(ArchiveSection):
                 minValue=0)))
 
     pressure_mean = Quantity(
-        #Link to class 'pressure'
+        #Link to ontology class 'pressure'
         links = ['http://purl.obolibrary.org/obo/PATO_0001025'],
         type=np.dtype(
             np.float64),
@@ -85,7 +85,7 @@ class LogData(ArchiveSection):
                 minValue=0)))
 
     temperature_mean = Quantity(
-        #Link to class 'temperature'
+        #Link to ontology class 'temperature'
         links = ['http://purl.obolibrary.org/obo/PATO_0000146'],
         type=np.dtype(np.float64),
         unit=('°C'),
@@ -97,7 +97,7 @@ class LogData(ArchiveSection):
         a_eln=dict(component='NumberEditQuantity', defaultDisplayUnit='°C'))
 
     power = Quantity(
-        #Link to class 'power', Link to class 'power setting datum'
+        #Link to ontology class 'power', Link to ontology class 'power setting datum'
         links = ['http://purl.obolibrary.org/obo/PATO_0001024','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002104'],
         type=np.dtype(
             np.float64),
@@ -115,7 +115,7 @@ class LogData(ArchiveSection):
             }])
 
     pressure = Quantity(
-        #Link to class 'pressure', Link to class 'pressure setting datum'
+        #Link to ontology class 'pressure', Link to ontology class 'pressure setting datum'
         links = ['http://purl.obolibrary.org/obo/PATO_0001025','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005040'],
         type=np.dtype(
             np.float64),
@@ -133,7 +133,7 @@ class LogData(ArchiveSection):
             }])
 
     time = Quantity(
-        #Link to class 'process time', Link to class 'process time setting datum'
+        #Link to ontology class 'process time', Link to ontology class 'process time setting datum'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001063','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002072'],
         type=np.dtype(
             np.float64),
@@ -141,7 +141,7 @@ class LogData(ArchiveSection):
         unit=('s'))
 
     temperature = Quantity(
-        #Link to class 'process temperature', Link to class 'process temperature setting datum'
+        #Link to ontology class 'process temperature', Link to ontology class 'process temperature setting datum'
         links = ['','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002071'],
         type=np.dtype(np.float64),
         shape=['*'],
@@ -172,7 +172,7 @@ class GasFlow(ArchiveSection):
         a_eln=dict(component='StringEditQuantity'))
 
     gas_flow_rate = Quantity(
-        #Link to class 'gas flow rate', Link to class 'gas flow rate setting datum'
+        #Link to ontology class 'gas flow rate', Link to ontology class 'gas flow rate setting datum'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002114','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002108'],
         type=np.dtype(
             np.float64),
@@ -194,7 +194,7 @@ class GasFlow(ArchiveSection):
 class PECVDProcess(ArchiveSection):
 
     power = Quantity(
-        #Link to class 'power', Link to class 'power setting datum'
+        #Link to ontology class 'power', Link to ontology class 'power setting datum'
         links = ['http://purl.obolibrary.org/obo/PATO_0001024','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002104'],
         type=np.dtype(
             np.float64),
@@ -206,7 +206,7 @@ class PECVDProcess(ArchiveSection):
                 minValue=0)))
 
     pressure = Quantity(
-        #Link to class 'pressure', Link to class 'pressure setting datum'
+        #Link to ontology class 'pressure', Link to ontology class 'pressure setting datum'
         links = ['http://purl.obolibrary.org/obo/PATO_0001025','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005040'],
         type=np.dtype(
             np.float64),
@@ -218,7 +218,7 @@ class PECVDProcess(ArchiveSection):
                 minValue=0)))
 
     time = Quantity(
-        #Link to class 'process time', Link to class 'process time setting datum'
+        #Link to ontology class 'process time', Link to ontology class 'process time setting datum'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001063','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002072'],
         type=np.dtype(
             np.float64),
@@ -230,14 +230,14 @@ class PECVDProcess(ArchiveSection):
                 minValue=0)))
 
     temperature = Quantity(
-        #Link to class 'process temperature', Link to class 'process temperature setting datum'
+        #Link to ontology class 'process temperature', Link to ontology class 'process temperature setting datum'
         links = ['','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002071'],
         type=np.dtype(np.float64),
         unit=('°C'),
         a_eln=dict(component='NumberEditQuantity', defaultDisplayUnit='°C'))
 
     plate_spacing = Quantity(
-        #Link to class 'plate spacing'
+        #Link to ontology class 'plate spacing'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002004'],
         type=np.dtype(
             np.float64), unit=('mm'), a_eln=dict(

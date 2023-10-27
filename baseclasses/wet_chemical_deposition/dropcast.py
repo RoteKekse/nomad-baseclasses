@@ -32,7 +32,7 @@ class DropCastingProperties(ArchiveSection):
             component='NumberEditQuantity'))
 
     dropcast_amount = Quantity(
-        #Link to class 'volume', Link to class 'volume setting datum'
+        #Link to ontology class 'volume', Link to ontology class 'volume setting datum'
         links = ['http://purl.obolibrary.org/obo/PATO_0000918', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002158'],
         type=np.dtype(
             np.float64),
@@ -42,7 +42,7 @@ class DropCastingProperties(ArchiveSection):
             defaultDisplayUnit='ml'))
 
     temperature = Quantity(
-        #Link to class 'temperature', Link to class 'temperature setting datum'
+        #Link to ontology class 'temperature', Link to ontology class 'temperature setting datum'
         links = ['http://purl.obolibrary.org/obo/PATO_0000146', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002111'],
         type=np.dtype(
             np.float64),
@@ -52,7 +52,7 @@ class DropCastingProperties(ArchiveSection):
             defaultDisplayUnit='°C'))
 
     atmosphere = Quantity(
-        #Link to class 'atmosphere'
+        #Link to ontology class 'atmosphere'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001012'],
         type=str,
         a_eln=dict(
@@ -63,7 +63,7 @@ class DropCastingProperties(ArchiveSection):
 
 class DropCasting(WetChemicalDeposition):
     m_def = Section(
-        #Link to class 'Drop casting'
+        #Link to ontology class 'Drop casting'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002059'],
     )
 

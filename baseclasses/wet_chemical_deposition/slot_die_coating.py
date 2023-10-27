@@ -32,7 +32,7 @@ from ..material_processes_misc import Annealing, AirKnifeGasQuenching
 class SlotDieCoatingProperties(ArchiveSection):
 
     flow_rate = Quantity(
-        #Link to class 'flow rate', Link to class 'flow rate setting datum'
+        #Link to ontology class 'flow rate', Link to ontology class 'flow rate setting datum'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005039', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005048'],
         type=np.dtype(
             np.float64),
@@ -42,7 +42,7 @@ class SlotDieCoatingProperties(ArchiveSection):
             defaultDisplayUnit='ml/minute', props=dict(minValue=0)))
 
     slot_die_head_width = Quantity(
-        #Link to class 'slot die head width', Link to class 'slot die head width setting datum'
+        #Link to ontology class 'slot die head width', Link to ontology class 'slot die head width setting datum'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005038', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005047'],
         type=np.dtype(
             np.float64),
@@ -54,7 +54,7 @@ class SlotDieCoatingProperties(ArchiveSection):
                 minValue=0)))
 
     slot_die_shim_width = Quantity(
-        #Link to class 'slot die shim width', Link to class 'slot die chim width setting datum'
+        #Link to ontology class 'slot die shim width', Link to ontology class 'slot die chim width setting datum'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005035', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005045'],
         type=np.dtype(
             np.float64),
@@ -66,7 +66,7 @@ class SlotDieCoatingProperties(ArchiveSection):
                 minValue=0)))
 
     slot_die_shim_thickness = Quantity(
-        #Link to class 'slot die shim thickness', Link to class 'slot die shim thickness setting datum'
+        #Link to ontology class 'slot die shim thickness', Link to ontology class 'slot die shim thickness setting datum'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005036', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005046'],
         type=np.dtype(
             np.float64),
@@ -78,7 +78,7 @@ class SlotDieCoatingProperties(ArchiveSection):
                 minValue=0)))
 
     slot_die_head_distance_to_thinfilm = Quantity(
-        #Link to class 'slot die head distance to thinfilm', Link to class 'slot die head distane to thinfilm setting datum'
+        #Link to ontology class 'slot die head distance to thinfilm', Link to ontology class 'slot die head distane to thinfilm setting datum'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005034', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005044'],
         type=np.dtype(
             np.float64),
@@ -90,7 +90,7 @@ class SlotDieCoatingProperties(ArchiveSection):
                 minValue=0)))
     
     slot_die_head_speed = Quantity(
-        #Link to class 'slot die head speed', Link to class 'slot die head speed setting datum'
+        #Link to ontology class 'slot die head speed', Link to ontology class 'slot die head speed setting datum'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005033', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005033'],
         type=np.dtype(
             np.float64),
@@ -102,7 +102,7 @@ class SlotDieCoatingProperties(ArchiveSection):
                 minValue=0)))
 
     temperature = Quantity(
-        #Link to class 'temperature', Link to class 'temperature setting datum'
+        #Link to ontology class 'temperature', Link to ontology class 'temperature setting datum'
         links = ['http://purl.obolibrary.org/obo/PATO_0000146', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002111'],
         type=np.dtype(
             np.float64),
@@ -117,7 +117,7 @@ class SlotDieCoatingProperties(ArchiveSection):
 class SlotDieCoating(WetChemicalDeposition):
     '''Spin Coating'''
     m_def = Section(
-        #Link to class 'slot die coating'
+        #Link to ontology class 'slot die coating'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00000075']
     )
     properties = SubSection(section_def=SlotDieCoatingProperties)
