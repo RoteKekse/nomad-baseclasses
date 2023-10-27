@@ -32,14 +32,14 @@ from ..material_processes_misc import Annealing
 class SprayPyrolysisProperties(ArchiveSection):
 
     temperature = Quantity(
-        #Link to class 'temperature', Link to class 'temperature setting datum'
+        #Link to ontology class 'temperature', Link to ontology class 'temperature setting datum'
         links = ['http://purl.obolibrary.org/obo/PATO_0000146', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002111'],
         type=np.dtype(np.float64),
         unit=('°C'),
         a_eln=dict(component='NumberEditQuantity', defaultDisplayUnit='°C'))
 
     time = Quantity(
-        #Link to class 'process time', Link to class 'process time setting datum'
+        #Link to ontology class 'process time', Link to ontology class 'process time setting datum'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001063', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002072'],
         type=np.dtype(np.float64),
         unit=('minute'),
@@ -49,7 +49,7 @@ class SprayPyrolysisProperties(ArchiveSection):
 class SprayPyrolysis(WetChemicalDeposition):
     '''Base class for spray pyrolysis of a sample'''
     m_def = Section(
-        #Link to Class 'Spray pyrolysis'
+        #Link to ontology class 'Spray pyrolysis'
         links = ['http://purl.obolibrary.org/obo/CHMO_0001516'],
     )
 
