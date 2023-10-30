@@ -29,11 +29,15 @@ from .. import LayerDeposition
 class PVDProcess(ArchiveSection):
 
     target = Quantity(
+        #Link to ontology class 'pvd source'
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002035'],
         type=Reference(Chemical.m_def),
         shape=['*'],
         a_eln=dict(component='ReferenceEditQuantity'))
 
     target_2 = SubSection(
+        #Link to ontology class 'pvd source'
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002035'],
         section_def=PubChemPureSubstanceSection, repeats=True)
 
     power = Quantity(
@@ -61,8 +65,8 @@ class PVDProcess(ArchiveSection):
                 minValue=0)))
 
     time = Quantity(
-        #Link to ontology class 'process time', Link to ontology class 'process time setting datum'
-        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001063','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002072'],
+        #Link to ontology class 'time', Link to ontology class 'time setting datum'
+        links = ['http://purl.obolibrary.org/obo/PATO_0000165', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005085'],
         type=np.dtype(
             np.float64),
         unit=('s'),
@@ -80,8 +84,8 @@ class PVDProcess(ArchiveSection):
         a_eln=dict(component='NumberEditQuantity', defaultDisplayUnit='1/s'))
 
     temperature = Quantity(
-        #Link to ontology class 'substrate temperature', Link to ontology class 'substrate temperature setting datum'
-        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00009996','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00009995'],
+        #Link to ontology class 'temperature', Link to ontology class 'temperature setting datum'
+        links = ['http://purl.obolibrary.org/obo/PATO_0000146','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002111'],
         type=np.dtype(np.float64),
         unit=('°C'),
         a_eln=dict(component='NumberEditQuantity', defaultDisplayUnit='°C'))
