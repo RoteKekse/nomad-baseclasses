@@ -29,10 +29,14 @@ from nomad.datamodel.metainfo.basesections import PubChemPureSubstanceSection
 class SputteringProcess(ArchiveSection):
 
     target = Quantity(
+        #Link to ontology class 'pvd source'
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002035'],
         type=Reference(Chemical.m_def),
         a_eln=dict(component='ReferenceEditQuantity'))
 
     target_2 = SubSection(
+        #Link to ontology class 'pvd source'
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002035'],
         section_def=PubChemPureSubstanceSection)
 
     thickness = Quantity(
@@ -46,6 +50,8 @@ class SputteringProcess(ArchiveSection):
                 minValue=0)))
 
     gas = Quantity(
+        #Link to ontology class 'chemical substance'
+        links = ['http://purl.obolibrary.org/obo/CHEBI_59999'],
         type=Reference(Chemical.m_def),
         a_eln=dict(component='ReferenceEditQuantity'))
 
