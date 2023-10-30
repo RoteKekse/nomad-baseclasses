@@ -27,6 +27,7 @@ class Sintering(ArchiveSection):
     '''Base class for sintering of a sample'''
     temperature = Quantity(
 <<<<<<< HEAD
+<<<<<<< HEAD
         #Link to ontology class 'temperature', Link to ontology class 'temperature setting datum'
         links = ['http://purl.obolibrary.org/obo/PATO_0000146','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002111'],
 =======
@@ -39,6 +40,10 @@ class Sintering(ArchiveSection):
         #Link to class 'temperature setting datum'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002111'],
 >>>>>>> ff6f4e2 (Corrected files from previous commit)
+=======
+        #Link to ontology class 'temperature', Link to ontology class 'temperature setting datum'
+        links = ['http://purl.obolibrary.org/obo/PATO_0000146','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002111'],
+>>>>>>> da2afee (Added links to 'material_processes_misc and fixed structure of older links)
         type=np.dtype(
             np.float64),
         unit=('°C'),
@@ -48,6 +53,7 @@ class Sintering(ArchiveSection):
             defaultDisplayUnit='°C'))
 
     time = Quantity(
+<<<<<<< HEAD
 <<<<<<< HEAD
         #Link to ontology class 'process time', Link to ontology class 'process time setting datum'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001063','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002072'],
@@ -61,6 +67,10 @@ class Sintering(ArchiveSection):
 =======
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002072'],
 >>>>>>> ff6f4e2 (Corrected files from previous commit)
+=======
+        #Link to ontology class 'process time', Link to ontology class 'process time setting datum'
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001063','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002072'],
+>>>>>>> da2afee (Added links to 'material_processes_misc and fixed structure of older links)
         type=np.dtype(
             np.float64),
         unit=('s'),

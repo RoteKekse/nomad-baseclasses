@@ -34,6 +34,7 @@ class Annealing(ArchiveSection):
     temperature = Quantity(
         #Link to ontology class 'annealing temperature', Link to ontology class 'annealing temperature setting datum'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002001','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002073'],
+<<<<<<< HEAD
 =======
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001033']
 =======
@@ -46,6 +47,8 @@ class Annealing(ArchiveSection):
         #Link to class 'annealing temperature setting datum'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002073'],
 >>>>>>> 2bfcffa (First Commit, added links in files annealing, quenching, sintering, wet chemical depo, dip coating, spin coating, spray pyrolysis, slot die coating)
+=======
+>>>>>>> da2afee (Added links to 'material_processes_misc and fixed structure of older links)
         type=np.dtype(
             np.float64),
         unit=('°C'),
@@ -55,6 +58,7 @@ class Annealing(ArchiveSection):
             defaultDisplayUnit='°C'))
 
     time = Quantity(
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         #Link to ontology class 'time', Link to ontology class 'time setting datum'
@@ -69,6 +73,10 @@ class Annealing(ArchiveSection):
         #Link to class 'process time setting datum'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002072'],
 >>>>>>> 2bfcffa (First Commit, added links in files annealing, quenching, sintering, wet chemical depo, dip coating, spin coating, spray pyrolysis, slot die coating)
+=======
+        #Link to ontology class 'time', Link to ontology class 'time setting datum'
+        links = ['http://purl.obolibrary.org/obo/PATO_0000165', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005085'],
+>>>>>>> da2afee (Added links to 'material_processes_misc and fixed structure of older links)
         type=np.dtype(
             np.float64),
         unit=('s'),
