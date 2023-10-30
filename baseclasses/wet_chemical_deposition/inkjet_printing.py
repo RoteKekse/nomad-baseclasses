@@ -39,14 +39,20 @@ class PrintHeadPath(ArchiveSection):
 
 class LP50NozzleVoltageProfile(NozzleVoltageProfile):
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dfae14f (Changed 'process time' & sd links into 'time' & sd links)
     m_def = Section(
         #Link to ontology class 'print nozzle voltage profile'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005083'],
     )
+<<<<<<< HEAD
 =======
     #Add nozzle profile
     m_def
 >>>>>>> 8794d04 (Updated 'Link to class' to 'Link to ontology class')
+=======
+>>>>>>> dfae14f (Changed 'process time' & sd links into 'time' & sd links)
     voltage_a = Quantity(
         type=np.dtype(
             np.float64), unit=('V'), a_eln=dict(

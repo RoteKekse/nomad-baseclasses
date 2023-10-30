@@ -55,6 +55,7 @@ class VaporizationProperties(ArchiveSection):
     initial_time = Quantity(
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         #Link to ontology class 'time', Link to ontology class 'time setting datum'
         links = ['http://purl.obolibrary.org/obo/PATO_0000165', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005085'],
 =======
@@ -64,6 +65,10 @@ class VaporizationProperties(ArchiveSection):
 >>>>>>> 8794d04 (Updated 'Link to class' to 'Link to ontology class')
         links = ['http://purl.obolibrary.org/obo/PATO_0000165'],
 >>>>>>> 93909fc (Added links in files dip coating, vaporization and dropcasting, dropcasting)
+=======
+        #Link to ontology class 'time', Link to ontology class 'time setting datum'
+        links = ['http://purl.obolibrary.org/obo/PATO_0000165', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005085'],
+>>>>>>> dfae14f (Changed 'process time' & sd links into 'time' & sd links)
         type=Datetime,
         a_eln=dict(component='DateTimeEditQuantity'))
 
