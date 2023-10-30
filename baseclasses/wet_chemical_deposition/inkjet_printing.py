@@ -38,8 +38,10 @@ class PrintHeadPath(ArchiveSection):
 
 
 class LP50NozzleVoltageProfile(NozzleVoltageProfile):
-    #Add nozzle profile
-    m_def
+    m_def = Section(
+        #Link to ontology class 'print nozzle voltage profile'
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005083'],
+    )
     voltage_a = Quantity(
         type=np.dtype(
             np.float64), unit=('V'), a_eln=dict(
@@ -58,6 +60,8 @@ class LP50NozzleVoltageProfile(NozzleVoltageProfile):
                 maxValue=25)))
 
     peak_time_a = Quantity(
+        #Link to ontology class 'time', Link to ontology class 'time setting datum'
+        links = ['http://purl.obolibrary.org/obo/PATO_0000165','http://purl.obolibrary.org/obo/PATO_0000165'],
         type=np.dtype(
             np.float64),
         unit=('us'),
@@ -97,6 +101,8 @@ class LP50NozzleVoltageProfile(NozzleVoltageProfile):
                 maxValue=25)))
 
     peak_time_b = Quantity(
+        #Link to ontology class 'time', Link to ontology class 'time setting datum'
+        links = ['http://purl.obolibrary.org/obo/PATO_0000165','http://purl.obolibrary.org/obo/PATO_0000165'],
         type=np.dtype(
             np.float64),
         unit=('us'),
@@ -161,12 +167,16 @@ class LP50PrintHeadPath(PrintHeadPath):
             component='NumberEditQuantity'))
 
     wait_run_time = Quantity(
+        #Link to ontology class 'time', Link to ontology class 'time setting datum'
+        links = ['http://purl.obolibrary.org/obo/PATO_0000165','http://purl.obolibrary.org/obo/PATO_0000165'],
         type=np.dtype(
             np.float64), unit=('s'), a_eln=dict(
             component='NumberEditQuantity', defaultDisplayUnit='s', props=dict(
                 minValue=0)))
 
     total_run_time = Quantity(
+        #Link to ontology class 'time', Link to ontology class 'time setting datum'
+        links = ['http://purl.obolibrary.org/obo/PATO_0000165','http://purl.obolibrary.org/obo/PATO_0000165'],
         type=np.dtype(
             np.float64), unit=('s'), a_eln=dict(
             component='NumberEditQuantity', defaultDisplayUnit='s', props=dict(

@@ -50,6 +50,8 @@ class SputteringProcess(ArchiveSection):
         a_eln=dict(component='ReferenceEditQuantity'))
 
     source = Quantity(
+        #Link to ontology class 'pvd source'
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002035'],
         type=str,
         a_eln=dict(
             component='EnumEditQuantity',
@@ -86,6 +88,8 @@ class SputteringProcess(ArchiveSection):
                 minValue=0)))
 
     capman_pressure = Quantity(
+        #Link to ontology class 'pressure', Link to ontology class 'pressure setting datum'
+        links = ['http://purl.obolibrary.org/obo/PATO_0001025','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005040'],
         type=np.dtype(
             np.float64),
         unit=('mmmHg'),
@@ -96,15 +100,15 @@ class SputteringProcess(ArchiveSection):
                 minValue=0)))
 
     temperature = Quantity(
-        #Link to ontology class 'process temperature', Link to ontology class 'process temperature setting datum'
-        links = ['','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002071'],
+        #Link to ontology class 'temperature', Link to ontology class 'temperature setting datum'
+        links = ['http://purl.obolibrary.org/obo/PATO_0000146','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002071'],
         type=np.dtype(np.float64),
         unit=('°C'),
         a_eln=dict(component='NumberEditQuantity', defaultDisplayUnit='°C'))
 
     burn_in_time = Quantity(
-        #Link to ontology class 'process time', Link to ontology class 'process time setting datum'
-        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001063','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002072'],
+        #Link to ontology class 'time', Link to ontology class 'time setting datum' (missing class)
+        links = ['http://purl.obolibrary.org/obo/PATO_0000165','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005085'],
         type=np.dtype(
             np.float64),
         unit=('s'),
@@ -115,8 +119,8 @@ class SputteringProcess(ArchiveSection):
                 minValue=0)))
 
     deposition_time = Quantity(
-        #Link to ontology class 'process time', Link to ontology class 'process time setting datum'
-        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001063','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002072'],
+        #Link to ontology class 'time', Link to ontology class 'time setting datum'
+        links = ['http://purl.obolibrary.org/obo/PATO_0000165','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005085'],
         type=np.dtype(
             np.float64),
         unit=('s'),
