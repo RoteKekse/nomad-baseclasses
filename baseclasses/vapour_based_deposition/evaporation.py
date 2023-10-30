@@ -290,6 +290,7 @@ class Evaporation(ArchiveSection):
     time = Quantity(
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         #Link to ontology class 'time', Link to ontology class 'time setting datum'
         links = ['http://purl.obolibrary.org/obo/PATO_0000165', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005085'],
 =======
@@ -299,6 +300,10 @@ class Evaporation(ArchiveSection):
 >>>>>>> 8794d04 (Updated 'Link to class' to 'Link to ontology class')
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001063','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002072'],
 >>>>>>> 1a08f68 (Added further links to vapour based deposition (evaporation; pvd))
+=======
+        #Link to ontology class 'time', Link to ontology class 'time setting datum'
+        links = ['http://purl.obolibrary.org/obo/PATO_0000165', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005085'],
+>>>>>>> 51b4502 (Changed 'process time' & sd to 'time' & sd in vapour based processes (prior commit for wet chemical deposition))
         type=np.dtype(
             np.float64),
         unit=('s'),
@@ -329,6 +334,7 @@ class OrganicEvaporation(Evaporation):
     temparature = Quantity(
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         #Link to ontology class 'temperature', Link to ontology class 'process temperature setting datum'
         links = ['http://purl.obolibrary.org/obo/PATO_0000146','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002111'],
 =======
@@ -338,6 +344,10 @@ class OrganicEvaporation(Evaporation):
 >>>>>>> 8794d04 (Updated 'Link to class' to 'Link to ontology class')
         links = ['','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002071'],
 >>>>>>> 1a08f68 (Added further links to vapour based deposition (evaporation; pvd))
+=======
+        #Link to ontology class 'temperature', Link to ontology class 'process temperature setting datum'
+        links = ['http://purl.obolibrary.org/obo/PATO_0000146','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002111'],
+>>>>>>> 51b4502 (Changed 'process time' & sd to 'time' & sd in vapour based processes (prior commit for wet chemical deposition))
         type=np.dtype(
             np.float64),
         unit=('°C'),
