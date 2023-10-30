@@ -37,8 +37,8 @@ class VaporizationProperties(ArchiveSection):
         a_eln=dict(component='NumberEditQuantity', defaultDisplayUnit='°C'))
 
     initial_time = Quantity(
-        #Link to ontology class 'time'
-        links = ['http://purl.obolibrary.org/obo/PATO_0000165'],
+        #Link to ontology class 'time', Link to ontology class 'time setting datum'
+        links = ['http://purl.obolibrary.org/obo/PATO_0000165', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005085'],
         type=Datetime,
         a_eln=dict(component='DateTimeEditQuantity'))
 
