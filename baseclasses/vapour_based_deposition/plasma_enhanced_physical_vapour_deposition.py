@@ -53,6 +53,8 @@ class LogData(ArchiveSection):
                 minValue=0)))
 
     power_var = Quantity(
+        #Link to ontology class 'power'
+        links = ['http://purl.obolibrary.org/obo/PATO_0001024'],
         type=np.dtype(
             np.float64),
         unit=('W'),
@@ -75,6 +77,8 @@ class LogData(ArchiveSection):
                 minValue=0)))
 
     pressure_var = Quantity(
+        #Link to ontology class 'pressure'
+        links = ['http://purl.obolibrary.org/obo/PATO_0001025'],
         type=np.dtype(
             np.float64),
         unit=('mbar'),
@@ -92,6 +96,8 @@ class LogData(ArchiveSection):
         a_eln=dict(component='NumberEditQuantity', defaultDisplayUnit='°C'))
 
     temperature_var = Quantity(
+        #Link to ontology class 'temperature'
+        links = ['http://purl.obolibrary.org/obo/PATO_0000146'],
         type=np.dtype(np.float64),
         unit=('°C'),
         a_eln=dict(component='NumberEditQuantity', defaultDisplayUnit='°C'))
