@@ -63,6 +63,7 @@ class PVDProcess(ArchiveSection):
     pressure = Quantity(
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         #Link to ontology class 'pressure'
         links = ['http://purl.obolibrary.org/obo/PATO_0001025'],
 =======
@@ -72,6 +73,10 @@ class PVDProcess(ArchiveSection):
 >>>>>>> 8794d04 (Updated 'Link to class' to 'Link to ontology class')
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001094'],
 >>>>>>> 1a08f68 (Added further links to vapour based deposition (evaporation; pvd))
+=======
+        #Link to ontology class 'pressure'
+        links = ['http://purl.obolibrary.org/obo/PATO_0001025'],
+>>>>>>> 450a925 (Changed 'Total Pressure'Link to 'Pressure'Link (PVD))
         type=np.dtype(
             np.float64),
         unit=('ubar'),
