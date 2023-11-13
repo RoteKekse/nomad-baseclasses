@@ -53,8 +53,8 @@ class PVDProcess(ArchiveSection):
                 minValue=0)))
 
     pressure = Quantity(
-        #Link to ontology class 'total pressure'
-        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001094'],
+        #Link to ontology class 'pressure'
+        links = ['http://purl.obolibrary.org/obo/PATO_0001025'],
         type=np.dtype(
             np.float64),
         unit=('ubar'),
