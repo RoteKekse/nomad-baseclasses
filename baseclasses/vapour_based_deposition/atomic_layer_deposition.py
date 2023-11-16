@@ -73,6 +73,8 @@ class ALDProperties(ArchiveSection):
         ))
 
     rate = Quantity(
+        #Link to ontology class 'thinfilm deposition rate', Link to ontology class 'thinfilm deposition rate setting datum'
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002110']
         type=np.dtype(
             np.float64),
         unit=('angstrom/s'),
