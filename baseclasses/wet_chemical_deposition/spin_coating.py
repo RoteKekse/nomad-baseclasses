@@ -40,6 +40,7 @@ class SpinCoatingRecipeSteps(ArchiveSection):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         #Link to ontology class 'process time', Link to ontology class 'process time setting datum'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001063', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002072'],
 =======
@@ -55,6 +56,10 @@ class SpinCoatingRecipeSteps(ArchiveSection):
 >>>>>>> 8794d04 (Updated 'Link to class' to 'Link to ontology class')
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001063', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002072'],
 >>>>>>> 1916ad1 (Fixed double links)
+=======
+        #Link to ontology class 'time', Link to ontology class 'time setting datum'
+        links = ['http://purl.obolibrary.org/obo/PATO_0000165', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005085'],
+>>>>>>> 273b347 (Modified spin coating)
         type=np.dtype(
             np.float64),
         unit=('s'),
