@@ -37,6 +37,7 @@ class AntiSolventQuenching(Quenching):
     m_def = Section(
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         #Link to ontology class 'anti solvent quenching'
 =======
         #Link to class 'anti solvent quenching'
@@ -44,6 +45,9 @@ class AntiSolventQuenching(Quenching):
 =======
         #Link to ontology class 'anti solvent quenching'
 >>>>>>> da2afee (Added links to 'material_processes_misc and fixed structure of older links)
+=======
+        #Link to ontology class 'anti solvent quenching'
+>>>>>>> 273b34793553e64e4e271202f9f7bbff0e56ed58
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001052'],
         label_quantity='name'
         )
@@ -52,6 +56,7 @@ class AntiSolventQuenching(Quenching):
     anti_solvent = Quantity(
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         #Link to ontology class 'solvent'
 =======
         #Link to class 'solvent'
@@ -59,6 +64,9 @@ class AntiSolventQuenching(Quenching):
 =======
         #Link to ontology class 'solvent'
 >>>>>>> da2afee (Added links to 'material_processes_misc and fixed structure of older links)
+=======
+        #Link to ontology class 'solvent'
+>>>>>>> 273b34793553e64e4e271202f9f7bbff0e56ed58
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00000026'],
         type=Reference(Chemical.m_def),
         a_eln=dict(component='ReferenceEditQuantity'))
@@ -66,6 +74,7 @@ class AntiSolventQuenching(Quenching):
     anti_solvent_2 = SubSection(
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         #Link to ontology class 'solvent'
 =======
         #Link to class 'solvent'
@@ -73,10 +82,14 @@ class AntiSolventQuenching(Quenching):
 =======
         #Link to ontology class 'solvent'
 >>>>>>> da2afee (Added links to 'material_processes_misc and fixed structure of older links)
+=======
+        #Link to ontology class 'solvent'
+>>>>>>> 273b34793553e64e4e271202f9f7bbff0e56ed58
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00000026'],
         section_def=PubChemPureSubstanceSection)
 
     anti_solvent_volume = Quantity(
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         #Link to ontology class 'volume', Link to ontology class 'volume setting datum'
@@ -91,6 +104,10 @@ class AntiSolventQuenching(Quenching):
         #Link to ontology class 'volume', Link to ontology class 'volume setting datum'
         links = ['http://purl.obolibrary.org/obo/PATO_0000918','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002158'],
 >>>>>>> da2afee (Added links to 'material_processes_misc and fixed structure of older links)
+=======
+        #Link to ontology class 'volume', Link to ontology class 'volume setting datum'
+        links = ['http://purl.obolibrary.org/obo/PATO_0000918','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002158'],
+>>>>>>> 273b34793553e64e4e271202f9f7bbff0e56ed58
         type=np.dtype(
             np.float64),
         unit=('ml'),
@@ -101,6 +118,7 @@ class AntiSolventQuenching(Quenching):
                 minValue=0)))
 
     anti_solvent_dropping_time = Quantity(
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         #Link to ontology class 'anti solvent dropping time', Link to ontology class 'anti solvent dropping time setting datum'
@@ -115,12 +133,17 @@ class AntiSolventQuenching(Quenching):
         #Link to ontology class 'anti solvent dropping time', Link to ontology class 'anti solvent dropping time setting datum'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002150','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002151'],
 >>>>>>> da2afee (Added links to 'material_processes_misc and fixed structure of older links)
+=======
+        #Link to ontology class 'anti solvent dropping time', Link to ontology class 'anti solvent dropping time setting datum'
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002150','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002151'],
+>>>>>>> 273b34793553e64e4e271202f9f7bbff0e56ed58
         type=np.dtype(
             np.float64), unit=('s'), a_eln=dict(
             component='NumberEditQuantity', defaultDisplayUnit='s', props=dict(
                 minValue=0)))
 
     anti_solvent_dropping_flow_rate = Quantity(
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         #Link to ontology class 'anti solvent dropping flow rate', Link to ontology class 'anti solvent dropping flow rate setting datum'
@@ -135,12 +158,17 @@ class AntiSolventQuenching(Quenching):
         #Link to ontology class 'anti solvent dropping flow rate', Link to ontology class 'anti solvent dropping flow rate setting datum'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005091','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005094'],
 >>>>>>> da2afee (Added links to 'material_processes_misc and fixed structure of older links)
+=======
+        #Link to ontology class 'anti solvent dropping flow rate', Link to ontology class 'anti solvent dropping flow rate setting datum'
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005091','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005094'],
+>>>>>>> 273b34793553e64e4e271202f9f7bbff0e56ed58
         type=np.dtype(
             np.float64), unit=('ul/s'), a_eln=dict(
             component='NumberEditQuantity', defaultDisplayUnit='ul/s', props=dict(
                 minValue=0)))
 
     anti_solvent_dropping_height = Quantity(
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         #Link to ontology class 'anti solvent dropping height', Link to ontology class 'anti solvent dropping height setting datum'
@@ -155,6 +183,10 @@ class AntiSolventQuenching(Quenching):
         #Link to ontology class 'anti solvent dropping height', Link to ontology class 'anti solvent dropping height setting datum'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005092','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005093'],
 >>>>>>> da2afee (Added links to 'material_processes_misc and fixed structure of older links)
+=======
+        #Link to ontology class 'anti solvent dropping height', Link to ontology class 'anti solvent dropping height setting datum'
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005092','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005093'],
+>>>>>>> 273b34793553e64e4e271202f9f7bbff0e56ed58
         type=np.dtype(
             np.float64), unit=('mm'), a_eln=dict(
             component='NumberEditQuantity', defaultDisplayUnit='mm', props=dict(
@@ -178,6 +210,7 @@ class GasQuenching(Quenching):
     m_def = Section(
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         #Link to ontology class 'gas quenching'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001077']
 =======
@@ -185,10 +218,15 @@ class GasQuenching(Quenching):
 <<<<<<< HEAD
         link = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001077']
 >>>>>>> 2bfcffa (First Commit, added links in files annealing, quenching, sintering, wet chemical depo, dip coating, spin coating, spray pyrolysis, slot die coating)
+=======
+        #Link to ontology class 'gas quenching'
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001077']
+>>>>>>> 273b34793553e64e4e271202f9f7bbff0e56ed58
     )
     gas = Quantity(
         #Link to ontology class 'chemical substance'
         links = ['http://purl.obolibrary.org/obo/CHEBI_59999'],
+<<<<<<< HEAD
 =======
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001077']
     )
@@ -204,6 +242,8 @@ class GasQuenching(Quenching):
         #Link to ontology class 'chemical substance'
         links = ['http://purl.obolibrary.org/obo/CHEBI_59999'],
 >>>>>>> da2afee (Added links to 'material_processes_misc and fixed structure of older links)
+=======
+>>>>>>> 273b34793553e64e4e271202f9f7bbff0e56ed58
         type=str,
         a_eln=dict(component='StringEditQuantity'))
 
@@ -212,12 +252,16 @@ class AirKnifeGasQuenching(GasQuenching):
     m_def = Section(
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 273b34793553e64e4e271202f9f7bbff0e56ed58
         #Link to ontology class 'air knife gas quenching'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005032'],
     )
     air_knife_pressure = Quantity(
         #Link to ontology class 'air knife pressure', Link to ontology class 'air knife pressure setting datum'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005021','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005027'],
+<<<<<<< HEAD
 =======
         #Link to class 'air knife gas quenching'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005032'],
@@ -240,6 +284,8 @@ class AirKnifeGasQuenching(GasQuenching):
         #Link to ontology class 'air knife pressure', Link to ontology class 'air knife pressure setting datum'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005021','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005027'],
 >>>>>>> da2afee (Added links to 'material_processes_misc and fixed structure of older links)
+=======
+>>>>>>> 273b34793553e64e4e271202f9f7bbff0e56ed58
         type=np.dtype(
             np.float64),
         unit=('mbar'),
@@ -251,6 +297,7 @@ class AirKnifeGasQuenching(GasQuenching):
                 minValue=0)))
 
     air_knife_speed = Quantity(
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         #Link to ontology class 'air knife speed', Link to ontology class 'air knife speed setting datum'
@@ -269,6 +316,10 @@ class AirKnifeGasQuenching(GasQuenching):
         #Link to ontology class 'air knife speed', Link to ontology class 'air knife speed setting datum'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005025','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005026'],
 >>>>>>> da2afee (Added links to 'material_processes_misc and fixed structure of older links)
+=======
+        #Link to ontology class 'air knife speed', Link to ontology class 'air knife speed setting datum'
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005025','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005026'],
+>>>>>>> 273b34793553e64e4e271202f9f7bbff0e56ed58
         type=np.dtype(
             np.float64),
         unit=('mm/s'),
@@ -280,6 +331,7 @@ class AirKnifeGasQuenching(GasQuenching):
                 minValue=0)))
 
     air_knife_angle = Quantity(
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         #Link to ontology class 'air knife angle', Link to ontology class 'air knife angle setting datum'
@@ -298,6 +350,10 @@ class AirKnifeGasQuenching(GasQuenching):
         #Link to ontology class 'air knife angle', Link to ontology class 'air knife angle setting datum'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005024','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005029'],
 >>>>>>> da2afee (Added links to 'material_processes_misc and fixed structure of older links)
+=======
+        #Link to ontology class 'air knife angle', Link to ontology class 'air knife angle setting datum'
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005024','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005029'],
+>>>>>>> 273b34793553e64e4e271202f9f7bbff0e56ed58
         type=np.dtype(
             np.float64),
         unit=('degree'),
@@ -309,6 +365,7 @@ class AirKnifeGasQuenching(GasQuenching):
                 minValue=0)))
 
     air_knife_distance_to_thin_film = Quantity(
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         #Link to ontology class 'air knife distance to thinfilm', Link to ontology class 'air knife distance to thinfilm setting datum'
@@ -327,6 +384,10 @@ class AirKnifeGasQuenching(GasQuenching):
         #Link to ontology class 'air knife distance to thinfilm', Link to ontology class 'air knife distance to thinfilm setting datum'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005023','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005028'],
 >>>>>>> da2afee (Added links to 'material_processes_misc and fixed structure of older links)
+=======
+        #Link to ontology class 'air knife distance to thinfilm', Link to ontology class 'air knife distance to thinfilm setting datum'
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005023','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005028'],
+>>>>>>> 273b34793553e64e4e271202f9f7bbff0e56ed58
         type=np.dtype(
             np.float64),
         description=('The distance of the air knife to the thin film.'),

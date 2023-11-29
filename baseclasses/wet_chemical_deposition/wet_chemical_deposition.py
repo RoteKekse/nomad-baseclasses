@@ -36,6 +36,7 @@ class PrecursorSolution(ArchiveSection):
     m_def = Section(label_quantity='name',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 8794d04 (Updated 'Link to class' to 'Link to ontology class')
                     #Link to ontology class 'precursor solution'
@@ -48,6 +49,10 @@ class PrecursorSolution(ArchiveSection):
 =======
                     links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001081'],
 >>>>>>> ff6f4e2 (Corrected files from previous commit)
+=======
+                    #Link to ontology class 'precursor solution'
+                    links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001081'],
+>>>>>>> 273b34793553e64e4e271202f9f7bbff0e56ed58
                     )
     name = Quantity(type=str)
 
@@ -60,6 +65,7 @@ class PrecursorSolution(ArchiveSection):
     solution = Quantity(
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         #Link to ontology class 'Solution'
 =======
         #Link to class 'Solution'
@@ -67,11 +73,15 @@ class PrecursorSolution(ArchiveSection):
 =======
         #Link to ontology class 'Solution'
 >>>>>>> 8794d04 (Updated 'Link to class' to 'Link to ontology class')
+=======
+        #Link to ontology class 'Solution'
+>>>>>>> 273b34793553e64e4e271202f9f7bbff0e56ed58
         links = ['http://purl.obolibrary.org/obo/CHEBI_75958'],
         type=Reference(Solution.m_def),
         a_eln=dict(component='ReferenceEditQuantity', label="Solution Reference"))
 
     solution_volume = Quantity(
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -90,6 +100,10 @@ class PrecursorSolution(ArchiveSection):
 >>>>>>> 8794d04 (Updated 'Link to class' to 'Link to ontology class')
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002158', 'http://purl.obolibrary.org/obo/PATO_0000918'],
 >>>>>>> 1916ad1 (Fixed double links)
+=======
+        #Link to ontology class 'volume setting datum', Link to ontology class 'volume'
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002158', 'http://purl.obolibrary.org/obo/PATO_0000918'],
+>>>>>>> 273b34793553e64e4e271202f9f7bbff0e56ed58
         type=np.dtype(
             np.float64),
         unit=('ml'),
@@ -145,10 +159,14 @@ class WetChemicalDeposition(LayerDeposition):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 273b34793553e64e4e271202f9f7bbff0e56ed58
         #Link to ontology class 'wet chemical deposition'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002051'],
     )
     
+<<<<<<< HEAD
 =======
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002051']
     )
@@ -163,6 +181,8 @@ class WetChemicalDeposition(LayerDeposition):
     )
     
 >>>>>>> ff6f4e2 (Corrected files from previous commit)
+=======
+>>>>>>> 273b34793553e64e4e271202f9f7bbff0e56ed58
     solution = SubSection(
         #Link to relation 'has specified input'
         section_def=PrecursorSolution, repeats=True, links = ['http://purl.obolibrary.org/obo/OBI_0000293'])
@@ -176,6 +196,7 @@ class WetChemicalDeposition(LayerDeposition):
     def normalize(self, archive, logger):
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         super(WetChemicalDeposition, self).normalize(archive, logger)
 
         if self.samples and self.solution:
@@ -187,3 +208,6 @@ class WetChemicalDeposition(LayerDeposition):
 =======
         super(WetChemicalDeposition, self).normalize(archive, logger)
 >>>>>>> 2bfcffa (First Commit, added links in files annealing, quenching, sintering, wet chemical depo, dip coating, spin coating, spray pyrolysis, slot die coating)
+=======
+        super(WetChemicalDeposition, self).normalize(archive, logger)
+>>>>>>> 273b34793553e64e4e271202f9f7bbff0e56ed58

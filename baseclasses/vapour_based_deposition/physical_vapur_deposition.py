@@ -43,6 +43,7 @@ class PVDProcess(ArchiveSection):
     power = Quantity(
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         #Link to ontology class 'power', Link to ontology class 'power setting datum'
 =======
         #Link to class 'power', Link to class 'power setting datum'
@@ -50,6 +51,9 @@ class PVDProcess(ArchiveSection):
 =======
         #Link to ontology class 'power', Link to ontology class 'power setting datum'
 >>>>>>> 8794d04 (Updated 'Link to class' to 'Link to ontology class')
+=======
+        #Link to ontology class 'power', Link to ontology class 'power setting datum'
+>>>>>>> 273b34793553e64e4e271202f9f7bbff0e56ed58
         links = ['http://purl.obolibrary.org/obo/PATO_0001024','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002104'],
         type=np.dtype(
             np.float64),
@@ -61,6 +65,7 @@ class PVDProcess(ArchiveSection):
                 minValue=0)))
 
     pressure = Quantity(
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -77,6 +82,10 @@ class PVDProcess(ArchiveSection):
         #Link to ontology class 'pressure'
         links = ['http://purl.obolibrary.org/obo/PATO_0001025'],
 >>>>>>> 450a925 (Changed 'Total Pressure'Link to 'Pressure'Link (PVD))
+=======
+        #Link to ontology class 'pressure'
+        links = ['http://purl.obolibrary.org/obo/PATO_0001025'],
+>>>>>>> 273b34793553e64e4e271202f9f7bbff0e56ed58
         type=np.dtype(
             np.float64),
         unit=('ubar'),
@@ -87,6 +96,7 @@ class PVDProcess(ArchiveSection):
                 minValue=0)))
 
     time = Quantity(
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -103,6 +113,10 @@ class PVDProcess(ArchiveSection):
         #Link to ontology class 'time', Link to ontology class 'time setting datum'
         links = ['http://purl.obolibrary.org/obo/PATO_0000165', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005085'],
 >>>>>>> 51b4502 (Changed 'process time' & sd to 'time' & sd in vapour based processes (prior commit for wet chemical deposition))
+=======
+        #Link to ontology class 'time', Link to ontology class 'time setting datum'
+        links = ['http://purl.obolibrary.org/obo/PATO_0000165', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005085'],
+>>>>>>> 273b34793553e64e4e271202f9f7bbff0e56ed58
         type=np.dtype(
             np.float64),
         unit=('s'),
@@ -115,6 +129,7 @@ class PVDProcess(ArchiveSection):
     rotation_speed = Quantity(
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         #Link to ontology class 'Rotation speed', Link to ontology class 'rotation speed setting datum'
 =======
         #Link to class 'Rotation speed', Link to class 'rotation speed setting datum'
@@ -122,12 +137,16 @@ class PVDProcess(ArchiveSection):
 =======
         #Link to ontology class 'Rotation speed', Link to ontology class 'rotation speed setting datum'
 >>>>>>> 8794d04 (Updated 'Link to class' to 'Link to ontology class')
+=======
+        #Link to ontology class 'Rotation speed', Link to ontology class 'rotation speed setting datum'
+>>>>>>> 273b34793553e64e4e271202f9f7bbff0e56ed58
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002026','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002005'],
         type=np.dtype(np.float64),
         unit=('1/s'),
         a_eln=dict(component='NumberEditQuantity', defaultDisplayUnit='1/s'))
 
     temperature = Quantity(
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -144,6 +163,10 @@ class PVDProcess(ArchiveSection):
         #Link to ontology class 'temperature', Link to ontology class 'temperature setting datum'
         links = ['http://purl.obolibrary.org/obo/PATO_0000146','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002111'],
 >>>>>>> 51b4502 (Changed 'process time' & sd to 'time' & sd in vapour based processes (prior commit for wet chemical deposition))
+=======
+        #Link to ontology class 'temperature', Link to ontology class 'temperature setting datum'
+        links = ['http://purl.obolibrary.org/obo/PATO_0000146','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002111'],
+>>>>>>> 273b34793553e64e4e271202f9f7bbff0e56ed58
         type=np.dtype(np.float64),
         unit=('°C'),
         a_eln=dict(component='NumberEditQuantity', defaultDisplayUnit='°C'))
@@ -162,6 +185,7 @@ class PVDeposition(LayerDeposition):
     m_def = Section(
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         #Link to ontology class 'physical vapour deposition'
 =======
         #Link to class 'physical vapour deposition'
@@ -169,6 +193,9 @@ class PVDeposition(LayerDeposition):
 =======
         #Link to ontology class 'physical vapour deposition'
 >>>>>>> 8794d04 (Updated 'Link to class' to 'Link to ontology class')
+=======
+        #Link to ontology class 'physical vapour deposition'
+>>>>>>> 273b34793553e64e4e271202f9f7bbff0e56ed58
         links = ['http://purl.obolibrary.org/obo/CHMO_0001356'],
     )
 

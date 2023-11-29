@@ -41,6 +41,7 @@ class SpinCoatingRecipeSteps(ArchiveSection):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         #Link to ontology class 'process time', Link to ontology class 'process time setting datum'
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001063', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002072'],
 =======
@@ -60,6 +61,10 @@ class SpinCoatingRecipeSteps(ArchiveSection):
         #Link to ontology class 'time', Link to ontology class 'time setting datum'
         links = ['http://purl.obolibrary.org/obo/PATO_0000165', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005085'],
 >>>>>>> 273b347 (Modified spin coating)
+=======
+        #Link to ontology class 'time', Link to ontology class 'time setting datum'
+        links = ['http://purl.obolibrary.org/obo/PATO_0000165', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005085'],
+>>>>>>> 273b34793553e64e4e271202f9f7bbff0e56ed58
         type=np.dtype(
             np.float64),
         unit=('s'),
@@ -70,6 +75,7 @@ class SpinCoatingRecipeSteps(ArchiveSection):
                 minValue=0)))
 
     speed = Quantity(
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -88,6 +94,10 @@ class SpinCoatingRecipeSteps(ArchiveSection):
 >>>>>>> 8794d04 (Updated 'Link to class' to 'Link to ontology class')
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002026', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002005'],
 >>>>>>> 1916ad1 (Fixed double links)
+=======
+        #Link to ontology class 'rotation speed', Link to ontology class 'rotation speed setting datum'
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002026', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002005'],
+>>>>>>> 273b34793553e64e4e271202f9f7bbff0e56ed58
         type=np.dtype(
             np.float64),
         unit=('rpm'),
@@ -98,6 +108,7 @@ class SpinCoatingRecipeSteps(ArchiveSection):
                 minValue=0)))
 
     acceleration = Quantity(
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -116,6 +127,10 @@ class SpinCoatingRecipeSteps(ArchiveSection):
 >>>>>>> 8794d04 (Updated 'Link to class' to 'Link to ontology class')
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002049', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002002'],
 >>>>>>> 1916ad1 (Fixed double links)
+=======
+        #Link to ontology class 'rotation acceleration', Link to ontology class 'rotation acceleration setting datum'
+        links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002049', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002002'],
+>>>>>>> 273b34793553e64e4e271202f9f7bbff0e56ed58
         type=np.dtype(
             np.float64),
         unit=('rpm/s'),
@@ -135,6 +150,7 @@ class SpinCoating(WetChemicalDeposition):
     m_def = Section(
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         #Link to ontology class 'spin coating'
 =======
         #Link to class 'spin coating'
@@ -142,6 +158,9 @@ class SpinCoating(WetChemicalDeposition):
 =======
         #Link to ontology class 'spin coating'
 >>>>>>> 8794d04 (Updated 'Link to class' to 'Link to ontology class')
+=======
+        #Link to ontology class 'spin coating'
+>>>>>>> 273b34793553e64e4e271202f9f7bbff0e56ed58
         links = ['http://purl.obolibrary.org/obo/CHMO_0001472'],
     )
 

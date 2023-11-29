@@ -30,6 +30,7 @@ class EvaporationSources(ArchiveSection):
     chemical = Quantity(
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         #Link to ontology class 'chemical substance'
 =======
         #Link to class 'chemical substance'
@@ -37,6 +38,9 @@ class EvaporationSources(ArchiveSection):
 =======
         #Link to ontology class 'chemical substance'
 >>>>>>> 8794d04 (Updated 'Link to class' to 'Link to ontology class')
+=======
+        #Link to ontology class 'chemical substance'
+>>>>>>> 273b34793553e64e4e271202f9f7bbff0e56ed58
         links = ['http://purl.obolibrary.org/obo/CHEBI_59999'],
         type=Reference(Chemical.m_def),
         a_eln=dict(component='ReferenceEditQuantity'))
@@ -44,6 +48,7 @@ class EvaporationSources(ArchiveSection):
     chemical_2 = SubSection(
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         #Link to ontology class 'chemical substance'
 =======
         #Link to class 'chemical substance'
@@ -51,6 +56,9 @@ class EvaporationSources(ArchiveSection):
 =======
         #Link to ontology class 'chemical substance'
 >>>>>>> 8794d04 (Updated 'Link to class' to 'Link to ontology class')
+=======
+        #Link to ontology class 'chemical substance'
+>>>>>>> 273b34793553e64e4e271202f9f7bbff0e56ed58
         links = ['http://purl.obolibrary.org/obo/CHEBI_59999'],
         section_def=PubChemPureSubstanceSection)
 
@@ -71,6 +79,7 @@ class EvaporationSources(ArchiveSection):
     mass_before_weighing = Quantity(
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         #Link to ontology class 'mass'
 =======
         #Link to class 'mass'
@@ -78,6 +87,9 @@ class EvaporationSources(ArchiveSection):
 =======
         #Link to ontology class 'mass'
 >>>>>>> 8794d04 (Updated 'Link to class' to 'Link to ontology class')
+=======
+        #Link to ontology class 'mass'
+>>>>>>> 273b34793553e64e4e271202f9f7bbff0e56ed58
         links = ['http://purl.obolibrary.org/obo/PATO_0000125'],
         type=np.dtype(
             np.float64),
@@ -91,6 +103,7 @@ class EvaporationSources(ArchiveSection):
     mass_after_weighing = Quantity(
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         #Link to ontology class 'mass'
 =======
         #Link to class 'mass'
@@ -98,6 +111,9 @@ class EvaporationSources(ArchiveSection):
 =======
         #Link to ontology class 'mass'
 >>>>>>> 8794d04 (Updated 'Link to class' to 'Link to ontology class')
+=======
+        #Link to ontology class 'mass'
+>>>>>>> 273b34793553e64e4e271202f9f7bbff0e56ed58
         links = ['http://purl.obolibrary.org/obo/PATO_0000125'],
         type=np.dtype(
             np.float64),
@@ -111,6 +127,7 @@ class EvaporationSources(ArchiveSection):
     mass_after_processing = Quantity(
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         #Link to ontology class 'mass'
 =======
         #Link to class 'mass'
@@ -118,6 +135,9 @@ class EvaporationSources(ArchiveSection):
 =======
         #Link to ontology class 'mass'
 >>>>>>> 8794d04 (Updated 'Link to class' to 'Link to ontology class')
+=======
+        #Link to ontology class 'mass'
+>>>>>>> 273b34793553e64e4e271202f9f7bbff0e56ed58
         links = ['http://purl.obolibrary.org/obo/PATO_0000125'],
         type=np.dtype(
             np.float64), unit=('g'), a_eln=dict(
@@ -144,6 +164,7 @@ class Evaporation(ArchiveSection):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                     #Link to ontology class 'evporation'
                     #links = [class doesnt exist],
 =======
@@ -157,6 +178,10 @@ class Evaporation(ArchiveSection):
 >>>>>>> 8794d04 (Updated 'Link to class' to 'Link to ontology class')
                     #links = [class doesnt exist],
 >>>>>>> 1a08f68 (Added further links to vapour based deposition (evaporation; pvd))
+=======
+                    #Link to ontology class 'evporation'
+                    #links = [class doesnt exist],
+>>>>>>> 273b34793553e64e4e271202f9f7bbff0e56ed58
                     )
     name = Quantity(
         type=str
@@ -165,6 +190,7 @@ class Evaporation(ArchiveSection):
     chemical = Quantity(
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         #Link to ontology class 'chemical substance'
 =======
         #Link to class 'chemical substance'
@@ -172,6 +198,9 @@ class Evaporation(ArchiveSection):
 =======
         #Link to ontology class 'chemical substance'
 >>>>>>> 8794d04 (Updated 'Link to class' to 'Link to ontology class')
+=======
+        #Link to ontology class 'chemical substance'
+>>>>>>> 273b34793553e64e4e271202f9f7bbff0e56ed58
         links = ['http://purl.obolibrary.org/obo/CHEBI_59999'],
         type=Reference(Chemical.m_def),
         a_eln=dict(component='ReferenceEditQuantity'))
@@ -179,6 +208,7 @@ class Evaporation(ArchiveSection):
     chemical_2 = SubSection(
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         #Link to ontology class 'chemical substance'
 =======
         #Link to class 'chemical substance'
@@ -186,6 +216,9 @@ class Evaporation(ArchiveSection):
 =======
         #Link to ontology class 'chemical substance'
 >>>>>>> 8794d04 (Updated 'Link to class' to 'Link to ontology class')
+=======
+        #Link to ontology class 'chemical substance'
+>>>>>>> 273b34793553e64e4e271202f9f7bbff0e56ed58
         links = ['http://purl.obolibrary.org/obo/CHEBI_59999'],
         section_def=PubChemPureSubstanceSection)
 
@@ -205,6 +238,7 @@ class Evaporation(ArchiveSection):
     thickness = Quantity(
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         #Link to ontology class 'thickness'
 =======
         #Link to class 'thickness'
@@ -212,6 +246,9 @@ class Evaporation(ArchiveSection):
 =======
         #Link to ontology class 'thickness'
 >>>>>>> 8794d04 (Updated 'Link to class' to 'Link to ontology class')
+=======
+        #Link to ontology class 'thickness'
+>>>>>>> 273b34793553e64e4e271202f9f7bbff0e56ed58
         links = ['http://purl.obolibrary.org/obo/PATO_0000915'],
         type=np.dtype(
             np.float64),
@@ -223,6 +260,7 @@ class Evaporation(ArchiveSection):
                 minValue=0)))
 
     pressure = Quantity(
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -242,6 +280,10 @@ class Evaporation(ArchiveSection):
 >>>>>>> 5a9d42b (see last commit, forgot to save locally)
         links = ['http://purl.obolibrary.org/obo/PATO_0001025','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005040'],
 >>>>>>> cd7fa1c (Added links to pevcd, fixed spelling error perovscite)
+=======
+        #Link to ontology class 'pressure', Link to ontology class 'pressure setting datum'
+        links = ['http://purl.obolibrary.org/obo/PATO_0001025','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005040'],
+>>>>>>> 273b34793553e64e4e271202f9f7bbff0e56ed58
         type=np.dtype(
             np.float64),
         unit=('mbar'),
@@ -254,6 +296,7 @@ class Evaporation(ArchiveSection):
     start_rate = Quantity(
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         #Link to ontology class 'rate'
 =======
         #Link to class 'rate'
@@ -261,6 +304,9 @@ class Evaporation(ArchiveSection):
 =======
         #Link to ontology class 'rate'
 >>>>>>> 8794d04 (Updated 'Link to class' to 'Link to ontology class')
+=======
+        #Link to ontology class 'rate'
+>>>>>>> 273b34793553e64e4e271202f9f7bbff0e56ed58
         links = ['http://purl.obolibrary.org/obo/PATO_0000161'],
         type=np.dtype(
             np.float64),
@@ -272,6 +318,7 @@ class Evaporation(ArchiveSection):
     target_rate = Quantity(
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         #Link to ontology class 'rate'
 =======
         #Link to class 'rate'
@@ -279,6 +326,9 @@ class Evaporation(ArchiveSection):
 =======
         #Link to ontology class 'rate'
 >>>>>>> 8794d04 (Updated 'Link to class' to 'Link to ontology class')
+=======
+        #Link to ontology class 'rate'
+>>>>>>> 273b34793553e64e4e271202f9f7bbff0e56ed58
         links = ['http://purl.obolibrary.org/obo/PATO_0000161'],
         type=np.dtype(
             np.float64),
@@ -288,6 +338,7 @@ class Evaporation(ArchiveSection):
             defaultDisplayUnit='angstrom/s', props=dict(minValue=0)))
 
     time = Quantity(
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -304,6 +355,10 @@ class Evaporation(ArchiveSection):
         #Link to ontology class 'time', Link to ontology class 'time setting datum'
         links = ['http://purl.obolibrary.org/obo/PATO_0000165', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005085'],
 >>>>>>> 51b4502 (Changed 'process time' & sd to 'time' & sd in vapour based processes (prior commit for wet chemical deposition))
+=======
+        #Link to ontology class 'time', Link to ontology class 'time setting datum'
+        links = ['http://purl.obolibrary.org/obo/PATO_0000165', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005085'],
+>>>>>>> 273b34793553e64e4e271202f9f7bbff0e56ed58
         type=np.dtype(
             np.float64),
         unit=('s'),
@@ -335,6 +390,7 @@ class OrganicEvaporation(Evaporation):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         #Link to ontology class 'temperature', Link to ontology class 'process temperature setting datum'
         links = ['http://purl.obolibrary.org/obo/PATO_0000146','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002111'],
 =======
@@ -348,6 +404,10 @@ class OrganicEvaporation(Evaporation):
         #Link to ontology class 'temperature', Link to ontology class 'process temperature setting datum'
         links = ['http://purl.obolibrary.org/obo/PATO_0000146','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002111'],
 >>>>>>> 51b4502 (Changed 'process time' & sd to 'time' & sd in vapour based processes (prior commit for wet chemical deposition))
+=======
+        #Link to ontology class 'temperature', Link to ontology class 'process temperature setting datum'
+        links = ['http://purl.obolibrary.org/obo/PATO_0000146','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002111'],
+>>>>>>> 273b34793553e64e4e271202f9f7bbff0e56ed58
         type=np.dtype(
             np.float64),
         unit=('°C'),
@@ -362,6 +422,7 @@ class InorganicEvaporation(Evaporation):
     power = Quantity(
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         #Link to ontology class 'power', Link to ontology class 'power setting datum'
 =======
         #Link to class 'power', Link to class 'power setting datum'
@@ -369,6 +430,9 @@ class InorganicEvaporation(Evaporation):
 =======
         #Link to ontology class 'power', Link to ontology class 'power setting datum'
 >>>>>>> 8794d04 (Updated 'Link to class' to 'Link to ontology class')
+=======
+        #Link to ontology class 'power', Link to ontology class 'power setting datum'
+>>>>>>> 273b34793553e64e4e271202f9f7bbff0e56ed58
         links = ['http://purl.obolibrary.org/obo/PATO_0001024','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002104'],
         type=np.dtype(
             np.float64),

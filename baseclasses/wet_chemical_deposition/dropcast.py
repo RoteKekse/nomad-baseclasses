@@ -35,6 +35,7 @@ class DropCastingProperties(ArchiveSection):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         #Link to ontology class 'volume', Link to ontology class 'volume setting datum'
         links = ['http://purl.obolibrary.org/obo/PATO_0000918', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002158'],
 =======
@@ -50,6 +51,10 @@ class DropCastingProperties(ArchiveSection):
 >>>>>>> 8794d04 (Updated 'Link to class' to 'Link to ontology class')
         links = ['http://purl.obolibrary.org/obo/PATO_0000918', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002158'],
 >>>>>>> 1916ad1 (Fixed double links)
+=======
+        #Link to ontology class 'volume', Link to ontology class 'volume setting datum'
+        links = ['http://purl.obolibrary.org/obo/PATO_0000918', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002158'],
+>>>>>>> 273b34793553e64e4e271202f9f7bbff0e56ed58
         type=np.dtype(
             np.float64),
         unit=('ml'),
@@ -58,6 +63,7 @@ class DropCastingProperties(ArchiveSection):
             defaultDisplayUnit='ml'))
 
     temperature = Quantity(
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -76,6 +82,10 @@ class DropCastingProperties(ArchiveSection):
 >>>>>>> 8794d04 (Updated 'Link to class' to 'Link to ontology class')
         links = ['http://purl.obolibrary.org/obo/PATO_0000146', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002111'],
 >>>>>>> 1916ad1 (Fixed double links)
+=======
+        #Link to ontology class 'temperature', Link to ontology class 'temperature setting datum'
+        links = ['http://purl.obolibrary.org/obo/PATO_0000146', 'http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002111'],
+>>>>>>> 273b34793553e64e4e271202f9f7bbff0e56ed58
         type=np.dtype(
             np.float64),
         unit=('°C'),
@@ -86,6 +96,7 @@ class DropCastingProperties(ArchiveSection):
     atmosphere = Quantity(
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         #Link to ontology class 'atmosphere'
 =======
         #Link to class 'atmosphere'
@@ -93,6 +104,9 @@ class DropCastingProperties(ArchiveSection):
 =======
         #Link to ontology class 'atmosphere'
 >>>>>>> 8794d04 (Updated 'Link to class' to 'Link to ontology class')
+=======
+        #Link to ontology class 'atmosphere'
+>>>>>>> 273b34793553e64e4e271202f9f7bbff0e56ed58
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001012'],
         type=str,
         a_eln=dict(
@@ -105,6 +119,7 @@ class DropCasting(WetChemicalDeposition):
     m_def = Section(
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         #Link to ontology class 'Drop casting'
 =======
         #Link to class 'Drop casting'
@@ -112,6 +127,9 @@ class DropCasting(WetChemicalDeposition):
 =======
         #Link to ontology class 'Drop casting'
 >>>>>>> 8794d04 (Updated 'Link to class' to 'Link to ontology class')
+=======
+        #Link to ontology class 'Drop casting'
+>>>>>>> 273b34793553e64e4e271202f9f7bbff0e56ed58
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002059'],
     )
 

@@ -44,6 +44,7 @@ class LogData(ArchiveSection):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         #Link to ontology class 'power'
 =======
         #Link to class 'power',
@@ -54,6 +55,9 @@ class LogData(ArchiveSection):
 =======
         #Link to ontology class 'power'
 >>>>>>> dfae14f (Changed 'process time' & sd links into 'time' & sd links)
+=======
+        #Link to ontology class 'power'
+>>>>>>> 273b34793553e64e4e271202f9f7bbff0e56ed58
         links = ['http://purl.obolibrary.org/obo/PATO_0001024'],
         type=np.dtype(
             np.float64),
@@ -79,6 +83,7 @@ class LogData(ArchiveSection):
     pressure_mean = Quantity(
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         #Link to ontology class 'pressure'
 =======
         #Link to class 'pressure'
@@ -86,6 +91,9 @@ class LogData(ArchiveSection):
 =======
         #Link to ontology class 'pressure'
 >>>>>>> 8794d04 (Updated 'Link to class' to 'Link to ontology class')
+=======
+        #Link to ontology class 'pressure'
+>>>>>>> 273b34793553e64e4e271202f9f7bbff0e56ed58
         links = ['http://purl.obolibrary.org/obo/PATO_0001025'],
         type=np.dtype(
             np.float64),
@@ -111,6 +119,7 @@ class LogData(ArchiveSection):
     temperature_mean = Quantity(
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         #Link to ontology class 'temperature'
 =======
         #Link to class 'temperature'
@@ -118,6 +127,9 @@ class LogData(ArchiveSection):
 =======
         #Link to ontology class 'temperature'
 >>>>>>> 8794d04 (Updated 'Link to class' to 'Link to ontology class')
+=======
+        #Link to ontology class 'temperature'
+>>>>>>> 273b34793553e64e4e271202f9f7bbff0e56ed58
         links = ['http://purl.obolibrary.org/obo/PATO_0000146'],
         type=np.dtype(np.float64),
         unit=('°C'),
@@ -133,6 +145,7 @@ class LogData(ArchiveSection):
     power = Quantity(
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         #Link to ontology class 'power', Link to ontology class 'power setting datum'
 =======
         #Link to class 'power', Link to class 'power setting datum'
@@ -140,6 +153,9 @@ class LogData(ArchiveSection):
 =======
         #Link to ontology class 'power', Link to ontology class 'power setting datum'
 >>>>>>> 8794d04 (Updated 'Link to class' to 'Link to ontology class')
+=======
+        #Link to ontology class 'power', Link to ontology class 'power setting datum'
+>>>>>>> 273b34793553e64e4e271202f9f7bbff0e56ed58
         links = ['http://purl.obolibrary.org/obo/PATO_0001024','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002104'],
         type=np.dtype(
             np.float64),
@@ -159,6 +175,7 @@ class LogData(ArchiveSection):
     pressure = Quantity(
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         #Link to ontology class 'pressure', Link to ontology class 'pressure setting datum'
 =======
         #Link to class 'pressure', Link to class 'pressure setting datum'
@@ -166,6 +183,9 @@ class LogData(ArchiveSection):
 =======
         #Link to ontology class 'pressure', Link to ontology class 'pressure setting datum'
 >>>>>>> 8794d04 (Updated 'Link to class' to 'Link to ontology class')
+=======
+        #Link to ontology class 'pressure', Link to ontology class 'pressure setting datum'
+>>>>>>> 273b34793553e64e4e271202f9f7bbff0e56ed58
         links = ['http://purl.obolibrary.org/obo/PATO_0001025','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005040'],
         type=np.dtype(
             np.float64),
@@ -186,6 +206,7 @@ class LogData(ArchiveSection):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         #Link to ontology class 'time', Link to ontology class 'time setting datum'
         links = ['http://purl.obolibrary.org/obo/PATO_0000165','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005085'],
 =======
@@ -199,12 +220,17 @@ class LogData(ArchiveSection):
         #Link to ontology class 'time', Link to ontology class 'time setting datum'
         links = ['http://purl.obolibrary.org/obo/PATO_0000165','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005085'],
 >>>>>>> dfae14f (Changed 'process time' & sd links into 'time' & sd links)
+=======
+        #Link to ontology class 'time', Link to ontology class 'time setting datum'
+        links = ['http://purl.obolibrary.org/obo/PATO_0000165','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005085'],
+>>>>>>> 273b34793553e64e4e271202f9f7bbff0e56ed58
         type=np.dtype(
             np.float64),
         shape=['*'],
         unit=('s'))
 
     temperature = Quantity(
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -221,6 +247,10 @@ class LogData(ArchiveSection):
         #Link to ontology class 'temperature', Link to ontology class 'temperature setting datum'
         links = ['http://purl.obolibrary.org/obo/PATO_0000146','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002071'],
 >>>>>>> dfae14f (Changed 'process time' & sd links into 'time' & sd links)
+=======
+        #Link to ontology class 'temperature', Link to ontology class 'temperature setting datum'
+        links = ['http://purl.obolibrary.org/obo/PATO_0000146','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002071'],
+>>>>>>> 273b34793553e64e4e271202f9f7bbff0e56ed58
         type=np.dtype(np.float64),
         shape=['*'],
         unit=('°C'),
@@ -252,6 +282,7 @@ class GasFlow(ArchiveSection):
     gas_flow_rate = Quantity(
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         #Link to ontology class 'gas flow rate', Link to ontology class 'gas flow rate setting datum'
 =======
         #Link to class 'gas flow rate', Link to class 'gas flow rate setting datum'
@@ -259,6 +290,9 @@ class GasFlow(ArchiveSection):
 =======
         #Link to ontology class 'gas flow rate', Link to ontology class 'gas flow rate setting datum'
 >>>>>>> 8794d04 (Updated 'Link to class' to 'Link to ontology class')
+=======
+        #Link to ontology class 'gas flow rate', Link to ontology class 'gas flow rate setting datum'
+>>>>>>> 273b34793553e64e4e271202f9f7bbff0e56ed58
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002114','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002108'],
         type=np.dtype(
             np.float64),
@@ -282,6 +316,7 @@ class PECVDProcess(ArchiveSection):
     power = Quantity(
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         #Link to ontology class 'power', Link to ontology class 'power setting datum'
 =======
         #Link to class 'power', Link to class 'power setting datum'
@@ -289,6 +324,9 @@ class PECVDProcess(ArchiveSection):
 =======
         #Link to ontology class 'power', Link to ontology class 'power setting datum'
 >>>>>>> 8794d04 (Updated 'Link to class' to 'Link to ontology class')
+=======
+        #Link to ontology class 'power', Link to ontology class 'power setting datum'
+>>>>>>> 273b34793553e64e4e271202f9f7bbff0e56ed58
         links = ['http://purl.obolibrary.org/obo/PATO_0001024','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002104'],
         type=np.dtype(
             np.float64),
@@ -302,6 +340,7 @@ class PECVDProcess(ArchiveSection):
     pressure = Quantity(
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         #Link to ontology class 'pressure', Link to ontology class 'pressure setting datum'
 =======
         #Link to class 'pressure', Link to class 'pressure setting datum'
@@ -309,6 +348,9 @@ class PECVDProcess(ArchiveSection):
 =======
         #Link to ontology class 'pressure', Link to ontology class 'pressure setting datum'
 >>>>>>> 8794d04 (Updated 'Link to class' to 'Link to ontology class')
+=======
+        #Link to ontology class 'pressure', Link to ontology class 'pressure setting datum'
+>>>>>>> 273b34793553e64e4e271202f9f7bbff0e56ed58
         links = ['http://purl.obolibrary.org/obo/PATO_0001025','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005040'],
         type=np.dtype(
             np.float64),
@@ -320,6 +362,7 @@ class PECVDProcess(ArchiveSection):
                 minValue=0)))
 
     time = Quantity(
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -336,6 +379,10 @@ class PECVDProcess(ArchiveSection):
         #Link to ontology class 'time', Link to ontology class 'time setting datum'
         links = ['http://purl.obolibrary.org/obo/PATO_0000165','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005085'],
 >>>>>>> dfae14f (Changed 'process time' & sd links into 'time' & sd links)
+=======
+        #Link to ontology class 'time', Link to ontology class 'time setting datum'
+        links = ['http://purl.obolibrary.org/obo/PATO_0000165','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00005085'],
+>>>>>>> 273b34793553e64e4e271202f9f7bbff0e56ed58
         type=np.dtype(
             np.float64),
         unit=('s'),
@@ -346,6 +393,7 @@ class PECVDProcess(ArchiveSection):
                 minValue=0)))
 
     temperature = Quantity(
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -362,11 +410,16 @@ class PECVDProcess(ArchiveSection):
         #Link to ontology class 'temperature', Link to ontology class 'temperature setting datum'
         links = ['http://purl.obolibrary.org/obo/PATO_0000146','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002071'],
 >>>>>>> dfae14f (Changed 'process time' & sd links into 'time' & sd links)
+=======
+        #Link to ontology class 'temperature', Link to ontology class 'temperature setting datum'
+        links = ['http://purl.obolibrary.org/obo/PATO_0000146','http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002071'],
+>>>>>>> 273b34793553e64e4e271202f9f7bbff0e56ed58
         type=np.dtype(np.float64),
         unit=('°C'),
         a_eln=dict(component='NumberEditQuantity', defaultDisplayUnit='°C'))
 
     plate_spacing = Quantity(
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         #Link to ontology class 'plate spacing'
@@ -376,6 +429,9 @@ class PECVDProcess(ArchiveSection):
 =======
         #Link to ontology class 'plate spacing'
 >>>>>>> 8794d04 (Updated 'Link to class' to 'Link to ontology class')
+=======
+        #Link to ontology class 'plate spacing'
+>>>>>>> 273b34793553e64e4e271202f9f7bbff0e56ed58
         links = ['http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002004'],
         type=np.dtype(
             np.float64), unit=('mm'), a_eln=dict(
